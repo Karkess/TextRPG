@@ -1,0 +1,527 @@
+{
+    "Material": {
+        "Ore": {
+            "Stone": {
+                "Description": "A small chunk of limestone.",
+                "Value": 5,
+                "Weight": 2
+            },
+            "Coal": {
+                "Description": "A lump of coal used as a basic fuel source.",
+                "Value": 10,
+                "Weight": 1
+            },
+            "Cobalt": {
+                "Description": "A rare, blue metal used for advanced crafting.",
+                "Value": 50,
+                "Weight": 9
+            },
+            "Fae Ore": {
+                "Description": "A magical ore glowing with otherworldly energy.",
+                "Value": 100,
+                "Weight": 1
+            },
+            "Copper": {
+                "Description": "A reddish-brown metal used in early crafting and coinage.",
+                "Value": 15,
+                "Weight": 9
+            },
+            "Iron": {
+                "Description": "A versatile metal, essential for making strong tools and weapons.",
+                "Value": 25,
+                "Weight": 8
+            },
+            "Silver": {
+                "Description": "A precious metal used in jewelry, currency, and magical items.",
+                "Value": 35,
+                "Weight": 10
+            },
+            "Tungsten Ore": {
+                "Description": "A heavy, durable ore prized for its toughness and high melting point.",
+                "Value": 45,
+                "Weight": 19
+            },
+            "Mithril": {
+                "Description": "A light yet incredibly strong metal, favored in high-end magical crafting.",
+                "Value": 75,
+                "Weight": 2
+            },
+            "Obsidium": {
+                "Description": "A dense volcanic crystal known for its magical properties and ability to withstand heat.",
+                "Value": 90,
+                "Weight": 6
+            },
+            "Celestium": {
+                "Description": "A shimmering ore that seems to have fallen from the sky, infused with celestial magic.",
+                "Value": 120,
+                "Weight": 3
+            },
+            "Aetherium": {
+                "Description": "A divine metal said to be forged from the very essence of the heavens.",
+                "Value": 150,
+                "Weight": 2
+            },
+            "Voidstone": {
+                "Description": "A dark, enigmatic material that bends time and space, extremely valuable in magical crafting.",
+                "Value": 200,
+                "Weight": 8
+            },
+            "Void Keystone": {
+                "Description": "A rare and powerful crystal that can only be found in the deepest, darkest abysses of the world.",
+                "Value": 50000,
+                "Weight": 1200
+            }
+        },
+        "Fish": {
+            "Minnow": {
+                "Description": "A small, common freshwater fish. Not much value, but easy to catch.",
+                "Value": 5,
+                "Weight": 1
+            },
+            "Trout": {
+                "Description": "A popular freshwater fish, often used in simple dishes.",
+                "Value": 15,
+                "Weight": 2
+            },
+            "Salmon": {
+                "Description": "A large, oily fish prized for its rich flavor.",
+                "Value": 25,
+                "Weight": 5
+            },
+            "Golden Koi": {
+                "Description": "A rare and beautiful fish, valued for its bright golden scales.",
+                "Value": 100,
+                "Weight": 3
+            },
+            "Silverfish": {
+                "Description": "A shiny, slippery fish often caught in freshwater streams.",
+                "Value": 20,
+                "Weight": 2
+            },
+            "Coral Bass": {
+                "Description": "A vibrant, colorful fish found around coral reefs, prized for its meat.",
+                "Value": 35,
+                "Weight": 4
+            },
+            "Sunfish": {
+                "Description": "A large, disc-shaped fish known for its unique appearance.",
+                "Value": 50,
+                "Weight": 6
+            },
+            "Rainbow Eel": {
+                "Description": "A long, elusive fish that shimmers with a rainbow of colors.",
+                "Value": 70,
+                "Weight": 4
+            },
+            "Frostfin": {
+                "Description": "A cold-water fish with silvery, ice-blue scales.",
+                "Value": 60,
+                "Weight": 5
+            },
+            "Anglerfish": {
+                "Description": "A deep-sea fish known for its glowing lure and sharp teeth.",
+                "Value": 120,
+                "Weight": 8
+            },
+            "Moonlit Snapper": {
+                "Description": "A mystical fish that glows faintly under the light of the moon.",
+                "Value": 80,
+                "Weight": 4
+            },
+            "Ice Pike": {
+                "Description": "A large predator fish found in icy waters, prized for its strength and size.",
+                "Value": 90,
+                "Weight": 6
+            },
+            "Ghost Carp": {
+                "Description": "A pale, translucent fish said to haunt the waters of the cursed marsh.",
+                "Value": 150,
+                "Weight": 5
+            },
+            "Swamp Catfish": {
+                "Description": "A bottom-feeding fish found in murky waters, known for its resilience.",
+                "Value": 100,
+                "Weight": 7
+            },
+            "Elysian Snapper": {
+                "Description": "A mythical fish found in enchanted waters, prized for its rare and delicate flavor.",
+                "Value": 200,
+                "Weight": 6
+            },
+            "Azure Tetra": {
+                "Description": "A small, brightly colored fish that glows blue under sunlight.",
+                "Value": 150,
+                "Weight": 2
+            },
+            "Starlight Ray": {
+                "Description": "A radiant fish found in waters under the stars, its scales glimmer like the night sky.",
+                "Value": 300,
+                "Weight": 8
+            },
+            "Nebula Guppy": {
+                "Description": "A tiny, luminous fish that appears to be a fragment of the cosmos itself.",
+                "Value": 180,
+                "Weight": 1
+            },
+            "Abyssal Leviathan": {
+                "Description": "A monstrous fish from the darkest depths of the ocean, feared for its immense size.",
+                "Value": 500,
+                "Weight": 50
+            },
+            "Void Angler": {
+                "Description": "A strange fish found in the void between realities, its eyes glow with eerie light.",
+                "Value": 400,
+                "Weight": 15
+            },
+            "Celestial Trout": {
+                "Description": "A fish imbued with celestial energy, its scales shimmer with a heavenly glow.",
+                "Value": 600,
+                "Weight": 10
+            },
+            "Galactic Manta": {
+                "Description": "A giant rayfish that glides through the waters like a star through the sky.",
+                "Value": 550,
+                "Weight": 25
+            },
+            "Phantom Sturgeon": {
+                "Description": "A ghostly sturgeon that is rarely seen, believed to be a guardian of the deep.",
+                "Value": 650,
+                "Weight": 35
+            },
+            "Void Leviathan": {
+                "Description": "A gigantic, ancient sea monster said to dwell in the void. Its scales are incredibly tough.",
+                "Value": 700,
+                "Weight": 60
+            },
+            "Cosmic Whale": {
+                "Description": "A legendary whale that swims in the cosmos, its flesh is said to grant immortality.",
+                "Value": 1000,
+                "Weight": 100
+            }
+        },
+        "Animal": {
+            "Rabbit": {
+                "Description": "A small and quick rabbit, often hunted for its fur and meat.",
+                "Value": 15,
+                "Weight": 1
+            },
+            "Forest Squirrel": {
+                "Description": "A nimble forest squirrel, hunted for its fur.",
+                "Value": 20,
+                "Weight": 1
+            },
+            "Deer": {
+                "Description": "A large deer, prized for its meat and hide.",
+                "Value": 100,
+                "Weight": 50
+            },
+            "Snow Rabbit": {
+                "Description": "A white rabbit, well camouflaged in the snow. Its fur is highly prized.",
+                "Value": 25,
+                "Weight": 1
+            },
+            "Boar": {
+                "Description": "A wild boar, known for its tough hide and delicious meat.",
+                "Value": 150,
+                "Weight": 70
+            },
+            "Arctic Fox": {
+                "Description": "A sleek and elusive arctic fox, highly valued for its fur.",
+                "Value": 120,
+                "Weight": 15
+            },
+            "Wolf": {
+                "Description": "A dangerous predator, hunted for its pelt.",
+                "Value": 200,
+                "Weight": 40
+            },
+            "Swamp Frog": {
+                "Description": "A frog found in the swamp, useful for crafting and alchemy.",
+                "Value": 10,
+                "Weight": 0.5
+            },
+            "Caribou": {
+                "Description": "A large caribou, offering valuable meat and hide.",
+                "Value": 200,
+                "Weight": 80
+            },
+            "Dire Wolf": {
+                "Description": "A fierce and deadly dire wolf, its hide is highly valued.",
+                "Value": 250,
+                "Weight": 50
+            },
+            "Marsh Boar": {
+                "Description": "A wild boar found in the marshlands, known for its tough hide and meat.",
+                "Value": 180,
+                "Weight": 60
+            },
+            "Crocodile": {
+                "Description": "A dangerous predator, hunted for its tough hide.",
+                "Value": 300,
+                "Weight": 100
+            },
+            "Crimson Fox": {
+                "Description": "A rare crimson-colored fox, prized for its unique fur.",
+                "Value": 180,
+                "Weight": 20
+            },
+            "Elk": {
+                "Description": "A majestic elk, valued for its large antlers and hide.",
+                "Value": 250,
+                "Weight": 100
+            },
+            "Giant Eagle": {
+                "Description": "A massive eagle, its feathers and talons are highly prized.",
+                "Value": 220,
+                "Weight": 60
+            },
+            "Mountain Lion": {
+                "Description": "A fierce mountain lion, hunted for its pelt and claws.",
+                "Value": 400,
+                "Weight": 80
+            },
+            "Mithril Griffin": {
+                "Description": "A rare and majestic creature with mithril-infused feathers.",
+                "Value": 500,
+                "Weight": 120
+            },
+            "Great Elk": {
+                "Description": "A gigantic elk with massive antlers, prized by hunters.",
+                "Value": 600,
+                "Weight": 140
+            },
+            "Dire Bear": {
+                "Description": "A fearsome bear, its hide is incredibly valuable.",
+                "Value": 700,
+                "Weight": 150
+            },
+            "Savannah Lion": {
+                "Description": "A powerful lion, known for its majestic mane.",
+                "Value": 600,
+                "Weight": 130
+            },
+            "Griffin": {
+                "Description": "A majestic griffin, valued for its feathers and claws.",
+                "Value": 800,
+                "Weight": 150
+            },
+            "Moonlight Hare": {
+                "Description": "A mystical hare, glowing faintly under the moonlight. Its pelt is rare and valuable.",
+                "Value": 50,
+                "Weight": 2
+            },
+            "Cave Bear": {
+                "Description": "A massive bear, hunted for its valuable hide.",
+                "Value": 900,
+                "Weight": 180
+            },
+            "Storm Eagle": {
+                "Description": "A powerful eagle that soars through the storm, prized for its feathers.",
+                "Value": 1000,
+                "Weight": 200
+            },
+            "Great Wolf": {
+                "Description": "A massive wolf, its hide and claws are highly valued.",
+                "Value": 800,
+                "Weight": 180
+            },
+            "Phoenix": {
+                "Description": "A mythical bird that is said to rise from its ashes. Its feathers are incredibly valuable.",
+                "Value": 1200,
+                "Weight": 100
+            },
+            "Dragon": {
+                "Description": "A powerful and dangerous dragon, its scales and bones are worth a fortune.",
+                "Value": 2000,
+                "Weight": 300
+            },
+            "Phantom Griffin": {
+                "Description": "A ghostly griffin that haunts the skies, its ethereal feathers are incredibly rare.",
+                "Value": 1500,
+                "Weight": 250
+            },
+            "Nightmare Beast": {
+                "Description": "A terrifying beast that roams the night, its hide is worth a fortune.",
+                "Value": 2500,
+                "Weight": 350
+            }
+        },
+        "Wood": {
+            "Maple Log": {
+                "Description": "A sturdy log of maple, used for construction and crafting.",
+                "Value": 10,
+                "Weight": 5
+            },
+            "Ash Log": {
+                "Description": "A durable log of ash, useful for crafting tools and construction.",
+                "Value": 12,
+                "Weight": 6
+            },
+            "Spruce Log": {
+                "Description": "A dense log of spruce, used in building and crafting.",
+                "Value": 18,
+                "Weight": 7
+            },
+            "Redwood Log": {
+                "Description": "A strong log from a redwood tree, prized for construction.",
+                "Value": 30,
+                "Weight": 10
+            },
+            "Ancient Yew Log": {
+                "Description": "An ancient and incredibly strong log, used in high-end crafting.",
+                "Value": 60,
+                "Weight": 12
+            },
+            "Tempestwood Log": {
+                "Description": "A log from trees that have been struck by lightning, highly durable.",
+                "Value": 100,
+                "Weight": 15
+            },
+            "Veilshadow Wood": {
+                "Description": "A dark, mysterious wood, prized for crafting rare items.",
+                "Value": 200,
+                "Weight": 20
+            }
+        },
+        "Ingredients": {
+            "Wildberry": {
+                "Description": "A sweet berry, used in cooking and alchemy.",
+                "Value": 5,
+                "Weight": 0.1
+            },
+            "Strawberry": {
+                "Description": "they are a yummy red berry that puts a smile on your face :3\nand you can enjoy them in lots of ways :3",
+                "Value": 7,
+                "Weight": 0.1
+            },
+            "Golden Lily": {
+                "Description": "A rare flower with potent medicinal properties.",
+                "Value": 20,
+                "Weight": 0.5
+            },
+            "Moonwort": {
+                "Description": "A delicate herb, used in potions and magic rituals.",
+                "Value": 8,
+                "Weight": 0.2
+            },
+            "Lavender Blossom": {
+                "Description": "A fragrant blossom known for its calming effects, used in alchemy.",
+                "Value": 15,
+                "Weight": 0.3
+            },
+            "Nighthaze Herb": {
+                "Description": "A dark herb, said to hold mystical properties.",
+                "Value": 10,
+                "Weight": 0.3
+            },
+            "Crimson Thorn": {
+                "Description": "A thorny plant used in powerful potions and poisons.",
+                "Value": 25,
+                "Weight": 0.4
+            },
+            "Everfrost Leaf": {
+                "Description": "A leaf that never melts, even in the sun, used in alchemy.",
+                "Value": 25,
+                "Weight": 0.2
+            },
+            "Witchbloom": {
+                "Description": "A rare flower used in powerful spells and potions.",
+                "Value": 50,
+                "Weight": 0.5
+            },
+            "Stardrop Fruit": {
+                "Description": "A rare fruit that glows under starlight, used in alchemy and cooking.",
+                "Value": 50,
+                "Weight": 0.8
+            },
+            "Celestial Vine": {
+                "Description": "A vine that grows only in the presence of starlight, used in magical crafting.",
+                "Value": 70,
+                "Weight": 1
+            },
+            "Aether Blossom": {
+                "Description": "A magical flower infused with aetheric energy, used in high-level alchemy.",
+                "Value": 120,
+                "Weight": 0.7
+            },
+            "Voidroot": {
+                "Description": "A root that seems to absorb light, used in the most powerful potions.",
+                "Value": 150,
+                "Weight": 1.5
+            },
+            "Phantom Petal": {
+                "Description": "A ghostly flower, used in powerful and rare magical potions.",
+                "Value": 220,
+                "Weight": 0.5
+            }
+        },
+        "Meat": {
+            "Cloaker Flesh": {
+                "Description": "The flesh from this monster can be cooked and eaten. It is said to be quite delicious!",
+                "Value": 35,
+                "Weight": 3
+            }
+        }
+    },
+    "Goods": {
+        "Commerce": {
+            "Denarius": {
+                "Description": "The standard currency in most regions.",
+                "Value": 1,
+                "Weight": 0.01
+            }
+        },
+        "Luxury": {
+            "Golden Chalice": {
+                "Description": "An ornate chalice made of pure gold.",
+                "Value": 1000,
+                "Weight": 5
+            },
+            "Silk Cloth": {
+                "Description": "A fine cloth made from the rarest silks.",
+                "Value": 250,
+                "Weight": 0.5
+            }
+        }
+    },
+    "Consumables": {
+        "Food": {
+            "Bread": {
+                "Description": "A basic loaf of bread. Restores a small amount of health.",
+                "Value": 2,
+                "Weight": 1
+            },
+            "Dried Meat": {
+                "Description": "Cured meat that lasts long and restores moderate health.",
+                "Value": 10,
+                "Weight": 1
+            }
+        },
+        "Potions": {
+            "Health Potion": {
+                "Description": "A red potion that instantly restores health.",
+                "Value": 50,
+                "Weight": 0.5
+            },
+            "Mana Potion": {
+                "Description": "A blue potion that restores magical energy.",
+                "Value": 50,
+                "Weight": 0.5
+            }
+        }
+    },
+    "Crafting": {
+        "Ingredients": {
+            "Iron Ingot": {
+                "Description": "A bar of smelted iron, used in crafting.",
+                "Value": 20,
+                "Weight": 3
+            },
+            "Leather Strip": {
+                "Description": "A strip of leather, often used in tailoring or crafting armor.",
+                "Value": 15,
+                "Weight": 0.2
+            }
+        }
+    }
+}

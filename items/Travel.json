@@ -1,0 +1,147 @@
+{
+    "Carts": {
+        "Handcart": {
+            "Description": "A larger cart still pulled by hand, but capable of carrying more weight.",
+            "Weight Capacity": 100,
+            "Speed": 1.2,
+            "Min Animals": 0,
+            "Max Animals": 0,
+            "Environments": ["Grassland", "Dirt Roads", "Forests"]
+        },
+        "Small Wagon": {
+            "Description": "A small animal-pulled wagon, perfect for short trips with a decent load.",
+            "Weight Capacity": 150,
+            "Speed": 4,
+            "Min Animals": 1,
+            "Max Animals": 2,
+            "Environments": ["Grassland", "Dirt Roads", "Forests"]
+        },
+        "Large Wagon": {
+            "Description": "A large wagon, useful for transporting larger loads but requires more animals to pull.",
+            "Weight Capacity": 300,
+            "Speed": 3,
+            "Min Animals": 2,
+            "Max Animals": 4,
+            "Environments": ["Grassland", "Dirt Roads", "Forests", "Hills"]
+        },
+        "Heavy Wagon": {
+            "Description": "A reinforced heavy-duty wagon for long-distance travel with large loads.",
+            "Weight Capacity": 500,
+            "Speed": 2,
+            "Min Animals": 2,
+            "Max Animals": 6,
+            "Environments": ["Grassland", "Dirt Roads", "Forests", "Mountains"]
+        },
+        "Supply Cart": {
+            "Description": "A military-style cart designed for carrying large amounts of supplies over rough terrain.",
+            "Weight Capacity": 400,
+            "Speed": 3,
+            "Min Animals": 2,
+            "Max Animals": 6,
+            "Environments": ["Grassland", "Dirt Roads", "Forests", "Mountains", "Swamps"]
+        },
+        "Magic-Floating Cart": {
+            "Description": "A cart that hovers slightly above the ground, powered by magic. It can travel across most terrains effortlessly.",
+            "Weight Capacity": 500,
+            "Speed": 6,
+            "Min Animals": 0,
+            "Max Animals": 0,
+            "Environments": ["Grassland", "Dirt Roads", "Forests", "Mountains", "Swamps", "Deserts"]
+        },
+        "Caravan Wagon": {
+            "Description": "A large wagon capable of carrying goods over vast distances. Perfect for long-haul trade routes.",
+            "Weight Capacity": 600,
+            "Speed": 3,
+            "Min Animals": 4,
+            "Max Animals": 8,
+            "Environments": ["Grassland", "Dirt Roads", "Forests", "Mountains", "Deserts"]
+        },
+        "Sky Chariot": {
+            "Description": "A flying cart pulled by magical creatures, capable of transporting goods through the skies at high speed.",
+            "Weight Capacity": 200,
+            "Speed": 10,
+            "Min Animals": 1,
+            "Max Animals": 2,
+            "Environments": ["Skies", "Mountains"]
+        }
+    },
+    "Animals": {
+        "Horse": {
+            "Description": "A strong and fast animal, ideal for pulling carts.",
+            "Strength": 75,
+            "Speed": 7,
+            "Bonus Capacity": 50,
+            "Environments": ["Grassland", "Dirt Roads", "Forests"]
+        },
+        "Ox": {
+            "Description": "An incredibly strong animal, slower than a horse but able to carry heavier loads.",
+            "Strength": 100,
+            "Speed": 4,
+            "Bonus Capacity": 100,
+            "Environments": ["Grassland", "Dirt Roads", "Hills"]
+        },
+        "Mule": {
+            "Description": "A versatile pack animal, able to pull carts through rough terrain.",
+            "Strength": 60,
+            "Speed": 5,
+            "Bonus Capacity": 40,
+            "Environments": ["Grassland", "Hills", "Mountains"]
+        },
+        "Griffin": {
+            "Description": "A majestic flying beast capable of pulling carts through the skies.",
+            "Strength": 120,
+            "Speed": 10,
+            "Bonus Capacity": 150,
+            "Environments": ["Grassland", "Mountains", "Skies"]
+        },
+        "Earth Elemental": {
+            "Description": "A mystical creature of stone and earth, it can move massive loads but is slow.",
+            "Strength": 150,
+            "Speed": 3,
+            "Bonus Capacity": 200,
+            "Environments": ["Mountains", "Caves", "Forests", "Grassland"]
+        },
+        "Dragon": {
+            "Description": "A powerful fantasy creature capable of immense feats of strength and speed. Can fly while carrying loads.",
+            "Strength": 200,
+            "Speed": 12,
+            "Bonus Capacity": 300,
+            "Environments": ["Skies", "Mountains", "Forests", "Grassland", "Deserts"]
+        },
+        "Camel": {
+            "Description": "A desert animal known for endurance. Can carry moderate loads for long distances in harsh environments.",
+            "Strength": 80,
+            "Speed": 5,
+            "Bonus Capacity": 60,
+            "Environments": ["Deserts", "Grassland", "Dirt Roads"]
+        },
+        "Dire Wolf": {
+            "Description": "A large, swift wolf capable of pulling small loads at high speeds.",
+            "Strength": 50,
+            "Speed": 8,
+            "Bonus Capacity": 30,
+            "Environments": ["Forests", "Mountains", "Snowy Regions"]
+        },
+        "Pegasus": {
+            "Description": "A flying horse with magical properties, great for swift transport over difficult terrain.",
+            "Strength": 90,
+            "Speed": 9,
+            "Bonus Capacity": 100,
+            "Environments": ["Skies", "Mountains", "Forests"]
+        },
+        "Unicorn": {
+            "Description": "A mythical creature, fast and resilient, capable of carrying lighter loads quickly across varied terrain.",
+            "Strength": 70,
+            "Speed": 9,
+            "Bonus Capacity": 70,
+            "Environments": ["Grassland", "Forests", "Mountains", "Magical Areas"]
+        },
+        "Bear": {
+            "Description": "A powerful beast known for its strength and endurance. Can carry moderate loads over short distances.",
+            "Strength": 100,
+            "Speed": 4,
+            "Bonus Capacity": 80,
+            "Environments": ["Forests", "Mountains", "Snowy Regions"]
+        }
+    }
+}

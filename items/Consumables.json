@@ -1,0 +1,39 @@
+{
+    "Combat_Consumables": [
+        {
+            "name": "Health Potion",
+            "special_effect": "Restores 50 health"
+        },
+        {
+            "name": "Mana Potion",
+            "special_effect": "Restores 30 mana"
+        },
+        {
+            "name": "Stamina Potion",
+            "special_effect": "Restores 20 stamina"
+        },
+        {
+            "name": "Elixir of Strength",
+            "special_effect": "Increases strength by 5 for 5 turns"
+        },
+        {
+            "name": "Elixir of Magic",
+            "special_effect": "Increases magical attack by 5 for 5 turns"
+        },
+        {
+            "name": "Elixir of Defense",
+            "special_effect": "Increases physical defense by 5 for 5 turns"
+        },
+        {
+            "name": "Elixir of Accuracy",
+            "special_effect": "Increases physical accuracy by 5 for 5 turns"
+        },
+        {
+            "name": "Elixir of Dexterity",
+            "special_effect": "Increases dexterity by 5 for 5 turns"
+        }
+    ],
+    "Non_Combat_Consumables": [
+        
+    ]
+}

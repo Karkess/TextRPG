@@ -1,0 +1,190 @@
+{
+    "area_unlocks": {
+        "Some Stone Over There": 1,
+        "Copper Ridge": 5,
+        "Ironclad Quarry": 15,
+        "Silverdeep Hollow": 20,
+        "Tungsten Chasm": 30,
+        "Dwarven Forge": 40,
+        "Obsidian Depths": 55,
+        "Fae Mine": 65,
+        "Celestial Rift": 73,
+        "Aetherium Vein": 80,
+        "Voidspire Depths": 90
+    },
+    "ore_unlocks": [
+        {
+            "ore_name": "Stone",
+            "level_required": 1,
+            "experience_per_gather": 10
+        },
+        {
+            "ore_name": "Copper",
+            "level_required": 5,
+            "experience_per_gather": 32
+        },
+        {
+            "ore_name": "Coal",
+            "level_required": 10,
+            "experience_per_gather": 45
+        },
+        {
+            "ore_name": "Iron",
+            "level_required": 15,
+            "experience_per_gather": 75
+        },
+        {
+            "ore_name": "Silver",
+            "level_required": 20,
+            "experience_per_gather": 100
+        },
+        {
+            "ore_name": "Tungsten Ore",
+            "level_required": 30,
+            "experience_per_gather": 120
+        },
+        {
+            "ore_name": "Mithril",
+            "level_required": 40,
+            "experience_per_gather": 250
+        },
+        {
+            "ore_name": "Obsidium",
+            "level_required": 55,
+            "experience_per_gather": 400
+        },
+        {
+            "ore_name": "Fae Ore",
+            "level_required": 65,
+            "experience_per_gather": 250
+        },
+        {
+            "ore_name": "Cobalt",
+            "level_required": 65,
+            "experience_per_gather": 250
+        },
+        {
+            "ore_name": "Celestium",
+            "level_required": 73,
+            "experience_per_gather": 550
+        },
+        {
+            "ore_name": "Aetherium",
+            "level_required": 80,
+            "experience_per_gather": 475
+        },
+        {
+            "ore_name": "Voidstone",
+            "level_required": 90,
+            "experience_per_gather": 775
+        },
+        {
+            "ore_name": "Void Keystone",
+            "level_required": 90,
+            "experience_per_gather": 120000
+        }
+    ],
+    "areas": {
+        "Some Stone Over There": {
+            "description": "A small patch of exposed stone in an otherwise grassy field. It's nothing impressive, but it'll do for now.",
+            "distance": 5,
+            "ores": {
+                "Stone": 10,
+                "Coal": 30
+            }
+        },
+        "Copper Ridge": {
+            "description": "A copper-rich hillside, tinged with the faint green hue of oxidized copper deposits.",
+            "distance": 8,
+            "ores": {
+                "Stone": 15,
+                "Copper": 25
+            }
+        },
+        "Ironclad Quarry": {
+            "description": "A quarry filled with veins of iron, its walls tinged with rust from centuries of mining.",
+            "distance": 12,
+            "ores": {
+                "Stone": 10,
+                "Iron": 28,
+                "Coal": 20
+            }
+        },
+        "Silverdeep Hollow": {
+            "description": "An ancient mine where silver veins glint in the darkness, deep beneath the earth.",
+            "distance": 18,
+            "ores": {
+                "Stone": 5,
+                "Silver": 30,
+                "Iron": 28
+            }
+        },
+        "Tungsten Chasm": {
+            "description": "A cavern full of dense, dark tungsten ore, prized for its hardness and weight.",
+            "distance": 20,
+            "ores": {
+                "Stone": 4,
+                "Tungsten Ore": 27,
+                "Iron": 20,
+                "Coal": 15
+            }
+        },
+        "Dwarven Forge": {
+            "description": "A forge deep in the mountains, tended by ancient dwarven artisans, rich with rare minerals.",
+            "distance": 40,
+            "ores": {
+                "Stone": 3,
+                "Tungsten Ore": 25,
+                "Mithril": 45,
+                "Iron": 14
+            }
+        },
+        "Obsidian Depths": {
+            "description": "A treacherous cavern filled with volcanic rock and Obsidium, a rare dark crystal known for its magical properties.",
+            "distance": 50,
+            "ores": {
+                "Obsidium": 47,
+                "Mithril": 35,
+                "Coal": 10
+            }
+        },
+        "Fae Mine": {
+            "description": "You step into an ethereal cave where glowy stones light your path and moss drapes the walls. The air hums with magical energy.",
+            "distance": 45,
+            "ores": {
+                "Stone": 2,
+                "Coal": 15,
+                "Cobalt": 30,
+                "Fae Ore": 25
+            }
+        },
+        "Celestial Rift": {
+            "description": "A rift in the earth where fragments of the sky itself seem to have fallen, leaving behind Celestium, a shimmering ore of unknown origin.",
+            "distance": 55,
+            "ores": {
+                "Celestium": 50,
+                "Mithril": 25,
+                "Fae Ore": 24
+            }
+        },
+        "Aetherium Vein": {
+            "description": "A mystical vein of ore, gleaming with the light of the heavens. Legends say it was created by the gods themselves.",
+            "distance": 65,
+            "ores": {
+                "Aetherium": 40,
+                "Mithril": 24,
+                "Fae Ore": 23
+            }
+        },
+        "Voidspire Depths": {
+            "description": "A terrifying, dark abyss where time and space twist, and Voidstone can be found in its purest form.",
+            "distance": 80,
+            "ores": {
+                "Void Keystone": 7200,
+                "Voidstone": 60,
+                "Aetherium": 38,
+                "Fae Ore": 21
+            }
+        }
+    }
+}

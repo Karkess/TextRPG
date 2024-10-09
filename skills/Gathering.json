@@ -1,0 +1,267 @@
+{
+    "area_unlocks": {
+        "Verdant Grove": 1,
+        "Autumnwood": 5,
+        "Frozen Glade": 15,
+        "Whispering Marsh": 20,
+        "Scarlet Thicket": 30,
+        "Ancient Redwood Forest": 40,
+        "Starlit Meadow": 55,
+        "Elderwood Depths": 65,
+        "Tempest Hollow": 73,
+        "Everbloom Grove": 80,
+        "Veilshadow Wilderness": 90
+    },
+    "resource_unlocks": [
+        {
+            "resource_name": "Maple Log",
+            "class": "Woodcutting",
+            "level_required": 1,
+            "experience_per_gather": 10,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Wildberry",
+            "class": "Foraging",
+            "level_required": 1,
+            "experience_per_gather": 8,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Strawberry",
+            "class": "Foraging",
+            "level_required": 3,
+            "experience_per_gather": 12,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Golden Lily",
+            "class": "Harvesting",
+            "level_required": 5,
+            "experience_per_gather": 15,
+            "tool_required": "Sickle"
+        },
+        {
+            "resource_name": "Ash Log",
+            "class": "Woodcutting",
+            "level_required": 5,
+            "experience_per_gather": 18,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Moonwort",
+            "class": "Foraging",
+            "level_required": 10,
+            "experience_per_gather": 18,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Lavender Blossom",
+            "class": "Harvesting",
+            "level_required": 10,
+            "experience_per_gather": 20,
+            "tool_required": "Sickle"
+        },
+        {
+            "resource_name": "Spruce Log",
+            "class": "Woodcutting",
+            "level_required": 15,
+            "experience_per_gather": 50,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Nighthaze Herb",
+            "class": "Foraging",
+            "level_required": 20,
+            "experience_per_gather": 40,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Crimson Thorn",
+            "class": "Harvesting",
+            "level_required": 20,
+            "experience_per_gather": 34,
+            "tool_required": "Sickle"
+        },
+        {
+            "resource_name": "Redwood Log",
+            "class": "Woodcutting",
+            "level_required": 30,
+            "experience_per_gather": 40,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Everfrost Leaf",
+            "class": "Foraging",
+            "level_required": 30,
+            "experience_per_gather": 45,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Witchbloom",
+            "class": "Harvesting",
+            "level_required": 40,
+            "experience_per_gather": 70,
+            "tool_required": "Sickle"
+        },
+        {
+            "resource_name": "Ancient Yew Log",
+            "class": "Woodcutting",
+            "level_required": 50,
+            "experience_per_gather": 100,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Stardrop Fruit",
+            "class": "Foraging",
+            "level_required": 55,
+            "experience_per_gather": 125,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Celestial Vine",
+            "class": "Harvesting",
+            "level_required": 62,
+            "experience_per_gather": 95,
+            "tool_required": "Sickle"
+        },
+        {
+            "resource_name": "Tempestwood Log",
+            "class": "Woodcutting",
+            "level_required": 68,
+            "experience_per_gather": 200,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Aether Blossom",
+            "class": "Foraging",
+            "level_required": 73,
+            "experience_per_gather": 150,
+            "tool_required": "Foraging Basket"
+        },
+        {
+            "resource_name": "Voidroot",
+            "class": "Harvesting",
+            "level_required": 80,
+            "experience_per_gather": 200,
+            "tool_required": "Sickle"
+        },
+        {
+            "resource_name": "Veilshadow Wood",
+            "class": "Woodcutting",
+            "level_required": 85,
+            "experience_per_gather": 200,
+            "tool_required": "Axe"
+        },
+        {
+            "resource_name": "Phantom Petal",
+            "class": "Foraging",
+            "level_required": 90,
+            "experience_per_gather": 220,
+            "tool_required": "Foraging Basket"
+        }
+    ],
+    "areas": {
+        "Verdant Grove": {
+            "description": "A lush forest filled with maple trees and wild berries.",
+            "distance": 5,
+            "resources": {
+                "Maple Log": 20,
+                "Wildberry": 15,
+                "Strawberry": 14,
+                "Golden Lily": 12
+            }
+        },
+        "Autumnwood": {
+            "description": "A colorful forest with a wide variety of flora and fauna.",
+            "distance": 8,
+            "resources": {
+                "Ash Log": 15,
+                "Moonwort": 10,
+                "Lavender Blossom": 11
+            }
+        },
+        "Frozen Glade": {
+            "description": "An icy expanse where hardy trees and herbs grow.",
+            "distance": 12,
+            "resources": {
+                "Spruce Log": 20,
+                "Nighthaze Herb": 15,
+                "Crimson Thorn": 10
+            }
+        },
+        "Whispering Marsh": {
+            "description": "A misty, dark marsh filled with strange herbs and towering trees.",
+            "distance": 18,
+            "resources": {
+                "Redwood Log": 13,
+                "Everfrost Leaf": 10,
+                "Witchbloom": 14
+            }
+        },
+        "Scarlet Thicket": {
+            "description": "A dense, crimson-hued forest known for its unique plants.",
+            "distance": 20,
+            "resources": {
+                "Redwood Log": 10,
+                "Crimson Thorn": 15,
+                "Everfrost Leaf": 12
+            }
+        },
+        "Ancient Redwood Forest": {
+            "description": "A towering forest filled with ancient redwood trees.",
+            "distance": 40,
+            "resources": {
+                "Redwood Log": 9,
+                "Ancient Yew Log": 15,
+                "Witchbloom": 11,
+                "Everfrost Leaf": 10
+            }
+        },
+        "Starlit Meadow": {
+            "description": "A serene meadow filled with celestial plants.",
+            "distance": 50,
+            "resources": {
+                "Stardrop Fruit": 15,
+                "Celestial Vine": 10,
+                "Ancient Yew Log": 14
+            }
+        },
+        "Elderwood Depths": {
+            "description": "A deep and mystical forest where rare plants thrive.",
+            "distance": 60,
+            "resources": {
+                "Tempestwood Log": 20,
+                "Aether Blossom": 12,
+                "Celestial Vine": 9
+            }
+        },
+        "Tempest Hollow": {
+            "description": "A treacherous forest known for its storm-infused trees.",
+            "distance": 70,
+            "resources": {
+                "Tempestwood Log": 16,
+                "Aether Blossom": 11,
+                "Voidroot": 12
+            }
+        },
+        "Everbloom Grove": {
+            "description": "A grove where plants of unimaginable beauty and power grow.",
+            "distance": 80,
+            "resources": {
+                "Veilshadow Wood": 25,
+                "Voidroot": 10,
+                "Aether Blossom": 10
+            }
+        },
+        "Veilshadow Wilderness": {
+            "description": "A mystical wilderness where only the rarest and most powerful resources are found.",
+            "distance": 90,
+            "resources": {
+                "Veilshadow Wood": 30,
+                "Phantom Petal": 20,
+                "Voidroot": 15
+            }
+        }
+    }
+}

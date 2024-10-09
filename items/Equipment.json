@@ -1,0 +1,147 @@
+{
+    "weapons": {
+        "main_hand": [
+            {
+                "name": "Basic Main Hand",
+                "attack_type": "Physical",
+                "stats": {
+                    "attack": 7,
+                    "strength": 1,
+                    "durability": 100
+                }
+            },
+            {
+                "name": "Another Weapon",
+                "attack_type": "Magical",
+                "stats": {
+                    "magical_attack": 6,
+                    "durability": 80
+                }
+            }
+        ],
+        "offhand": [
+            {
+                "name": "Basic Shield",
+                "attack_type": "Defense",
+                "stats": {
+                    "block": 10,
+                    "dexterity": 1,
+                    "physical_defense": 15,
+                    "magic_defense": 5,
+                    "durability": 120
+                }
+            }
+        ],
+        "extra": [
+            {
+                "name": "Basic Dagger",
+                "attack_type": "Physical",
+                "stats": {
+                    "attack": 7,
+                    "critical_chance": 5,
+                    "durability": 90
+                }
+            }
+        ]
+    },
+    "armor": {
+        "helmet": [
+            {
+                "name": "Basic Helmet",
+                "stats": {
+                    "physical_defense": 3,
+                    "magic_defense": 1,
+                    "durability": 100
+                }
+            }
+        ],
+        "cape": [
+            {
+                "name": "Basic Cape",
+                "stats": {
+                    "magic_defense": 2,
+                    "dexterity": 1,
+                    "durability": 80
+                }
+            }
+        ],
+        "neck": [
+            {
+                "name": "Basic Necklace",
+                "stats": {
+                    "magic_defense": 3,
+                    "physical_defense": 1,
+                    "durability": 100
+                }
+            }
+        ],
+        "shoulders": [
+            {
+                "name": "Basic Shoulders",
+                "stats": {
+                    "physical_defense": 4,
+                    "magic_defense": 2,
+                    "durability": 95
+                }
+            }
+        ],
+        "chest": [
+            {
+                "name": "Basic Chestplate",
+                "stats": {
+                    "physical_defense": 10,
+                    "magic_defense": 5,
+                    "durability": 150
+                }
+            }
+        ],
+        "legs": [
+            {
+                "name": "Basic Leggings",
+                "stats": {
+                    "physical_defense": 8,
+                    "magic_defense": 4,
+                    "durability": 120
+                }
+            }
+        ],
+        "gloves": [
+            {
+                "name": "Basic Gloves",
+                "stats": {
+                    "physical_defense": 2,
+                    "magic_defense": 1,
+                    "durability": 80
+                }
+            }
+        ],
+        "boots": [
+            {
+                "name": "Basic Boots",
+                "stats": {
+                    "physical_defense": 3,
+                    "magic_defense": 1,
+                    "durability": 90
+                }
+            }
+        ],
+        "rings": [
+            {
+                "name": "Basic Ring 1",
+                "stats": {
+                    "magic_defense": 2,
+                    "strength": 1,
+                    "durability": 50
+                }
+            },
+            {
+                "name": "Basic Ring 2",
+                "stats": {
+                    "magic_defense": 2,
+                    "strength": 1,
+                    "durability": 50
+                }
+            }
+        ]
+    }
+}

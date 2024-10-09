@@ -1,0 +1,326 @@
+{
+    "area_unlocks": {
+        "Whispering Forest": 1,
+        "Highland Hills": 5,
+        "Frozen Tundra": 15,
+        "Shadowed Marsh": 20,
+        "Crimson Plateau": 30,
+        "Ancient Grove": 40,
+        "Moonlit Savannah": 55,
+        "Sunken Depths": 65,
+        "Stormclaw Mountains": 73,
+        "Eternal Plains": 80,
+        "Phantom Wilds": 90
+    },
+        "animal_unlocks": [
+            {
+                "animal_name": "Rabbit",
+                "class": "Small Game",
+                "level_required": 1,
+                "experience_per_hunt": 10,
+                "tool_required": "Snare"
+            },
+            {
+                "animal_name": "Forest Squirrel",
+                "class": "Small Game",
+                "level_required": 2,
+                "experience_per_hunt": 15,
+                "tool_required": "Snare"
+            },
+            {
+                "animal_name": "Deer",
+                "class": "Big Game",
+                "level_required": 5,
+                "experience_per_hunt": 35,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Snow Rabbit",
+                "class": "Small Game",
+                "level_required": 5,
+                "experience_per_hunt": 15,
+                "tool_required": "Snare"
+            },
+            {
+                "animal_name": "Boar",
+                "class": "Big Game",
+                "level_required": 10,
+                "experience_per_hunt": 50,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Arctic Fox",
+                "class": "Predator",
+                "level_required": 12,
+                "experience_per_hunt": 50,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Wolf",
+                "class": "Predator",
+                "level_required": 15,
+                "experience_per_hunt": 80,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Swamp Frog",
+                "class": "Small Game",
+                "level_required": 15,
+                "experience_per_hunt": 20,
+                "tool_required": "Snare"
+            },
+            {
+                "animal_name": "Caribou",
+                "class": "Big Game",
+                "level_required": 18,
+                "experience_per_hunt": 100,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Dire Wolf",
+                "class": "Predator",
+                "level_required": 20,
+                "experience_per_hunt": 100,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Marsh Boar",
+                "class": "Big Game",
+                "level_required": 20,
+                "experience_per_hunt": 60,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Crocodile",
+                "class": "Predator",
+                "level_required": 25,
+                "experience_per_hunt": 120,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Crimson Fox",
+                "class": "Predator",
+                "level_required": 25,
+                "experience_per_hunt": 70,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Elk",
+                "class": "Big Game",
+                "level_required": 30,
+                "experience_per_hunt": 150,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Giant Eagle",
+                "class": "Big Game",
+                "level_required": 30,
+                "experience_per_hunt": 120,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Mountain Lion",
+                "class": "Predator",
+                "level_required": 40,
+                "experience_per_hunt": 300,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Mithril Griffin",
+                "class": "Big Game",
+                "level_required": 40,
+                "experience_per_hunt": 200,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Great Elk",
+                "class": "Big Game",
+                "level_required": 50,
+                "experience_per_hunt": 350,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Dire Bear",
+                "class": "Predator",
+                "level_required": 45,
+                "experience_per_hunt": 400,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Savannah Lion",
+                "class": "Predator",
+                "level_required": 55,
+                "experience_per_hunt": 350,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Griffin",
+                "class": "Big Game",
+                "level_required": 55,
+                "experience_per_hunt": 500,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Moonlight Hare",
+                "class": "Small Game",
+                "level_required": 60,
+                "experience_per_hunt": 25,
+                "tool_required": "Snare"
+            },
+            {
+                "animal_name": "Cave Bear",
+                "class": "Predator",
+                "level_required": 60,
+                "experience_per_hunt": 400,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Storm Eagle",
+                "class": "Big Game",
+                "level_required": 70,
+                "experience_per_hunt": 600,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Great Wolf",
+                "class": "Predator",
+                "level_required": 75,
+                "experience_per_hunt": 450,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Phoenix",
+                "class": "Big Game",
+                "level_required": 73,
+                "experience_per_hunt": 850,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Dragon",
+                "class": "Predator",
+                "level_required": 65,
+                "experience_per_hunt": 700,
+                "tool_required": "Trap"
+            },
+            {
+                "animal_name": "Phantom Griffin",
+                "class": "Big Game",
+                "level_required": 85,
+                "experience_per_hunt": 1000,
+                "tool_required": "Bow"
+            },
+            {
+                "animal_name": "Nightmare Beast",
+                "class": "Predator",
+                "level_required": 90,
+                "experience_per_hunt": 1200,
+                "tool_required": "Trap"
+            }
+        ],
+    "areas": {
+        "Whispering Forest": {
+            "description": "A serene forest filled with small game, perfect for beginners.",
+            "distance": 5,
+            "animals": {
+                "Rabbit": 15,
+                "Forest Squirrel": 10,
+                "Deer": 5
+            }
+        },
+        "Highland Hills": {
+            "description": "Rolling hills where deer and wild boar roam freely.",
+            "distance": 8,
+            "animals": {
+                "Deer": 20,
+                "Boar": 12,
+                "Mountain Goat": 8
+            }
+        },
+        "Frozen Tundra": {
+            "description": "A cold and barren land where wolves and other predators hunt.",
+            "distance": 12,
+            "animals": {
+                "Snow Rabbit": 15,
+                "Arctic Fox": 10,
+                "Dire Wolf": 8,
+                "Caribou": 5
+            }
+        },
+        "Shadowed Marsh": {
+            "description": "A swampy marsh filled with dangers where predators lurk.",
+            "distance": 18,
+            "animals": {
+                "Marsh Boar": 15,
+                "Swamp Frog": 10,
+                "Crocodile": 5,
+                "Dire Wolf": 8
+            }
+        },
+        "Crimson Plateau": {
+            "description": "A plateau where majestic elk and other large creatures can be hunted.",
+            "distance": 20,
+            "animals": {
+                "Elk": 25,
+                "Giant Eagle": 12,
+                "Crimson Fox": 10
+            }
+        },
+        "Ancient Grove": {
+            "description": "An ancient forest filled with predators and large game.",
+            "distance": 40,
+            "animals": {
+                "Mountain Lion": 20,
+                "Great Elk": 15,
+                "Dire Bear": 10
+            }
+        },
+        "Moonlit Savannah": {
+            "description": "A savannah where mythical creatures roam under the stars.",
+            "distance": 50,
+            "animals": {
+                "Griffin": 30,
+                "Savannah Lion": 15,
+                "Elk": 20,
+                "Moonlight Hare": 10
+            }
+        },
+        "Sunken Depths": {
+            "description": "A dark and dangerous cavern where only the brave hunt dragons.",
+            "distance": 60,
+            "animals": {
+                "Dragon": 25,
+                "Cave Bear": 10,
+                "Griffin": 15
+            }
+        },
+        "Stormclaw Mountains": {
+            "description": "Treacherous peaks where legendary creatures like the Phoenix are hunted.",
+            "distance": 70,
+            "animals": {
+                "Phoenix": 20,
+                "Mountain Lion": 12,
+                "Storm Eagle": 15
+            }
+        },
+        "Eternal Plains": {
+            "description": "A vast expanse of plains where great predators and game roam.",
+            "distance": 80,
+            "animals": {
+                "Nightmare Beast": 25,
+                "Elk": 15,
+                "Griffin": 10,
+                "Great Wolf": 10
+            }
+        },
+        "Phantom Wilds": {
+            "description": "A mystical wilderness where the most legendary and dangerous predators roam.",
+            "distance": 90,
+            "animals": {
+                "Nightmare Beast": 30,
+                "Phantom Griffin": 20,
+                "Dragon": 10,
+                "Phoenix": 15
+            }
+        }
+    }
+}

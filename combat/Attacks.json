@@ -1,0 +1,119 @@
+{
+    "attacks": [
+      {
+        "name": "Slash",
+        "type": "Physical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} slashed at {target} and dealt {damage} damage!",
+        "power": 15,
+        "accuracy": 85,
+        "cost": "None"
+      },
+      {
+        "name": "Power Strike",
+        "type": "Physical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} slashed firmly at {target} and dealt {damage} damage!",
+        "power": 35,
+        "accuracy": 85,
+        "cost": "Fatigue: 30"
+      },
+      {
+        "name": "Fireball",
+        "type": "Magical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} hurled a fireball at {target}, causing {damage} fire damage!",
+        "power": 20,
+        "accuracy": 90,
+        "cost": "10 Mana"
+      },
+      {
+        "name": "Magic Missile",
+        "type": "Magical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} hurled a magic ball at {target}, causing {damage} magic damage!",
+        "power": 30,
+        "accuracy": 80,
+        "cost": "15 Mana"
+      },
+      {
+        "name": "Gouge Eyes",
+        "type": "Physical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} firmly {RED}{BOLD}{ITALIC}licks its own blade{RESET} before lunging at {target}'s eyes, dealing {damage} and impairing their vision!",
+        "power": 25,
+        "accuracy": 75,
+        "cost": "None",
+        "special_effect": "Blind"
+      },
+      {
+        "name": "Bite",
+        "type": "Physical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} bit into {target} fiercely, dealing {damage} damage!",
+        "power": 18,
+        "accuracy": 80,
+        "cost": "None"
+      },
+      {
+        "name": "Tail Whip",
+        "type": "Physical",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} lashed their tail at {target}, delivering {damage} damage!",
+        "power": 12,
+        "accuracy": 85,
+        "cost": "None"
+      },
+      {
+        "name": "Screech",
+        "type": "Special",
+        "targeting": "All Opponents",
+        "flavor_text": "{user} let out a terrifying screech, stunning {target} for a moment!",
+        "power": 0,
+        "accuracy": 100,
+        "cost": "None",
+        "special_effect": "Stun"
+      },
+      {
+          "name": "Status Test",
+          "type": "Special",
+          "targeting": "Self",
+          "flavor_text": "{user} applied poison and strength boost to themselves.!",
+          "power": 0,
+          "accuracy": 100,
+          "cost": "10 Mana",
+          "special_effect": "apply_status_test_boosts({user}, {targets}, 'Strength Boost', 'buff', 3, 1)|apply_status_test_boosts({user}, {targets}, 'Poison', 'debuff', 3, 2)"
+      },
+      {
+        "name": "Healing Spell",
+        "type": "Special",
+        "targeting": "Single Opponent",
+        "flavor_text": "{user} heals {target} with a powerful spell!",
+        "power": 0,
+        "accuracy": 100,
+        "cost": "15 Mana",
+        "special_effect": "cast_heal({user}, {targets}, 50)"
+      },
+      {
+        "name": "Self Heal",
+        "type": "Special",
+        "targeting": "Self",
+        "flavor_text": "{user} heals themselves for a burst of health!",
+        "power": 0,
+        "accuracy": 100,
+        "cost": "10 Mana",
+        "special_effect": "self_heal({user}, 30)" 
+      },
+      {
+        "name": "Vampiric Pact",
+        "type": "Special",
+        "targeting": "All Opponents",
+        "flavor_text": "{Purple}{user} has made a pact with the darkness. Shadows fall over the battle and all who oppose {user} feel their soul being sapped away!",
+        "power": 35,
+        "accuracy": 85,
+        "cost": "Fatigue: 30",
+        "special_effect": "vampiric_pact({user}, {targets})"
+      }
+    ]
+  }
+  

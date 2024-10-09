@@ -1,0 +1,26 @@
+{
+    "Buffs": {
+        "Strength Boost": {
+            "Persistent": true,
+            "Removable": true,
+            "Effect": "apply_strength_boost",
+            "Stacks": 3,
+            "On_Refresh": {
+                "Stacks": "stack",
+                "Duration": "refresh" 
+            }
+        }
+    },
+    "Debuffs": {
+        "Poison": {
+            "Persistent": false,
+            "Removable": true,
+            "Effect": "apply_poison_damage",
+            "Stacks": 10,
+            "On_Refresh": {
+                "Stacks": "stack",
+                "Duration": "neither" 
+            }
+        }
+    }
+}

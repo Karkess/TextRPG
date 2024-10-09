@@ -1,0 +1,516 @@
+{
+    "Mining": {
+        "Rusty Pickaxe": {
+            "Level Required": 1,
+            "Value": 15,
+            "Rate": 1.4,
+            "Description": "An old pickaxe that gathers below standard rate"
+        },
+        "Bronze Pickaxe": {
+            "Level Required": 10,
+            "Value": 50,
+            "Rate": 1.2,
+            "Description": "A sturdy pickaxe made of bronze, gathers faster than a rusty pickaxe"
+        },
+        "Iron Pickaxe": {
+            "Level Required": 20,
+            "Value": 100,
+            "Rate": 1.0,
+            "Description": "A sturdy pickaxe made of Iron, gathers faster than a bronze pickaxe"
+        },
+        "Mythril Pickaxe": {
+            "Level Required": 35,
+            "Value": 300,
+            "Rate": 0.9,
+            "Description": "A durable mythril pickaxe used for faster gathering of rare minerals."
+        },
+        "Adamant Pickaxe": {
+            "Level Required": 50,
+            "Value": 600,
+            "Rate": 0.8,
+            "Description": "An adamant pickaxe designed for higher efficiency when mining."
+        },
+        "Void Pickaxe": {
+            "Level Required": 60,
+            "Value": 1200,
+            "Rate": 0.7,
+            "Description": "A void-infused pickaxe, gathering resources from another dimension."
+        },
+        "Dragonbone Pickaxe": {
+            "Level Required": 70,
+            "Value": 2000,
+            "Rate": 0.6,
+            "Description": "A dragonbone pickaxe, the peak of mining tools, offering unmatched efficiency."
+        },
+        "Celestial Pickaxe": {
+            "Level Required": 82,
+            "Value": 4000,
+            "Rate": 0.5,
+            "Description": "A pickaxe crafted with celestial energy, enabling extremely fast mining."
+        },
+        "Elder Pickaxe": {
+            "Level Required": 95,
+            "Value": 6000,
+            "Rate": 0.4,
+            "Description": "An ancient pickaxe, crafted from the wisdom of the elder gods, the ultimate mining tool."
+        }
+    },
+    "Fishing": {
+        "Basic Fishing Rod": {
+            "Level Required": 1,
+            "Value": 10,
+            "Rate": 1.2,
+            "Description": "A simple fishing rod for beginners"
+        },
+        "Advanced Fishing Rod": {
+            "Level Required": 15,
+            "Value": 45,
+            "Rate": 1.8,
+            "Description": "An advanced fishing rod for more efficient catching"
+        },
+        "Golden Fishing Rod": {
+            "Level Required": 30,
+            "Value": 150,
+            "Rate": 1.6,
+            "Description": "A golden fishing rod designed to catch rare fish with ease."
+        },
+        "Mythril Fishing Rod": {
+            "Level Required": 45,
+            "Value": 500,
+            "Rate": 1.4,
+            "Description": "A mythril fishing rod with improved precision and durability."
+        },
+        "Void Fishing Rod": {
+            "Level Required": 60,
+            "Value": 1000,
+            "Rate": 1.2,
+            "Description": "A void fishing rod capable of catching fish from other realms."
+        },
+        "Dragonbone Fishing Rod": {
+            "Level Required": 70,
+            "Value": 1800,
+            "Rate": 1.0,
+            "Description": "A fishing rod made from dragonbone, offering superior strength and catch rate."
+        },
+        "Celestial Fishing Rod": {
+            "Level Required": 82,
+            "Value": 3500,
+            "Rate": 0.9,
+            "Description": "A fishing rod blessed by celestial beings, capable of catching legendary fish."
+        },
+        "Elder Fishing Rod": {
+            "Level Required": 95,
+            "Value": 6000,
+            "Rate": 0.7,
+            "Description": "An elder fishing rod, used only by the most skilled fishermen, capable of unrivaled efficiency."
+        }
+    },
+    "Hunting": {
+        "Snare": {
+            "Basic Snare": {
+                "Type": "Snare",
+                "Level Required": 1,
+                "Value": 10,
+                "Rate": 1.3,
+                "Description": "A basic snare for catching small game animals."
+            },
+            "Improved Snare": {
+                "Type": "Snare",
+                "Level Required": 10,
+                "Value": 40,
+                "Rate": 1.1,
+                "Description": "A reinforced snare that catches small game faster."
+            },
+            "Steel Snare": {
+                "Type": "Snare",
+                "Level Required": 20,
+                "Value": 80,
+                "Rate": 1.0,
+                "Description": "A strong steel snare, capable of trapping small game at a faster rate."
+            },
+            "Expert Snare": {
+                "Type": "Snare",
+                "Level Required": 30,
+                "Value": 150,
+                "Rate": 0.9,
+                "Description": "A finely tuned snare used by experts to catch small game with ease."
+            },
+            "Master Snare": {
+                "Type": "Snare",
+                "Level Required": 40,
+                "Value": 300,
+                "Rate": 0.8,
+                "Description": "A masterful snare, almost invisible to the animals it catches."
+            },
+            "Legendary Snare": {
+                "Type": "Snare",
+                "Level Required": 50,
+                "Value": 600,
+                "Rate": 0.7,
+                "Description": "A legendary snare, unmatched in its ability to catch small game quickly."
+            },
+            "Void Snare": {
+                "Type": "Snare",
+                "Level Required": 60,
+                "Value": 1200,
+                "Rate": 0.6,
+                "Description": "A void-infused snare capable of capturing creatures from other realms."
+            },
+            "Phantom Snare": {
+                "Type": "Snare",
+                "Level Required": 70,
+                "Value": 2000,
+                "Rate": 0.5,
+                "Description": "A phantom snare that captures even the most elusive creatures."
+            },
+            "Elder Snare": {
+                "Type": "Snare",
+                "Level Required": 82,
+                "Value": 4000,
+                "Rate": 0.4,
+                "Description": "A snare crafted by the elders, capable of catching any creature with ease."
+            },
+            "Mythical Snare": {
+                "Type": "Snare",
+                "Level Required": 95,
+                "Value": 6000,
+                "Rate": 0.3,
+                "Description": "A snare of legendary status, able to trap even the most mythical creatures."
+            }
+        },
+        "Bow": {
+            "Hunting Bow": {
+                "Type": "Bow",
+                "Level Required": 1,
+                "Value": 20,
+                "Rate": 1.5,
+                "Description": "A basic bow used to hunt large game animals."
+            },
+            "Reinforced Bow": {
+                "Type": "Bow",
+                "Level Required": 15,
+                "Value": 80,
+                "Rate": 1.2,
+                "Description": "A reinforced bow for better hunting efficiency."
+            },
+            "Ironwood Bow": {
+                "Type": "Bow",
+                "Level Required": 25,
+                "Value": 160,
+                "Rate": 1.0,
+                "Description": "A durable ironwood bow used for hunting large game with precision."
+            },
+            "Longbow": {
+                "Type": "Bow",
+                "Level Required": 35,
+                "Value": 300,
+                "Rate": 0.9,
+                "Description": "A longbow capable of hitting targets at a longer range, increasing efficiency."
+            },
+            "Mythril Bow": {
+                "Type": "Bow",
+                "Level Required": 45,
+                "Value": 500,
+                "Rate": 0.8,
+                "Description": "A rare mythril bow with superior range and precision for hunting large game."
+            },
+            "Phoenix Bow": {
+                "Type": "Bow",
+                "Level Required": 55,
+                "Value": 1000,
+                "Rate": 0.7,
+                "Description": "A legendary bow, said to be blessed by a phoenix, making hunting effortless."
+            },
+            "Void Bow": {
+                "Type": "Bow",
+                "Level Required": 60,
+                "Value": 1500,
+                "Rate": 0.6,
+                "Description": "A bow that channels void energy, capable of hunting otherworldly creatures."
+            },
+            "Dragonbone Bow": {
+                "Type": "Bow",
+                "Level Required": 70,
+                "Value": 2500,
+                "Rate": 0.5,
+                "Description": "A bow made from dragonbone, offering superior range and power."
+            },
+            "Celestial Bow": {
+                "Type": "Bow",
+                "Level Required": 82,
+                "Value": 5000,
+                "Rate": 0.4,
+                "Description": "A celestial bow that channels divine energy for perfect hunting."
+            },
+            "Elder Bow": {
+                "Type": "Bow",
+                "Level Required": 95,
+                "Value": 8000,
+                "Rate": 0.3,
+                "Description": "A bow crafted by the elders, capable of unmatched precision and power."
+            }
+        },
+        "Trap": {
+            "Small Trap": {
+                "Type": "Trap",
+                "Level Required": 1,
+                "Value": 30,
+                "Rate": 1.7,
+                "Description": "A small trap used for catching predators."
+            },
+            "Iron Trap": {
+                "Type": "Trap",
+                "Level Required": 20,
+                "Value": 120,
+                "Rate": 1.4,
+                "Description": "An iron trap designed to catch stronger predators."
+            },
+            "Steel Trap": {
+                "Type": "Trap",
+                "Level Required": 30,
+                "Value": 220,
+                "Rate": 1.2,
+                "Description": "A steel trap that can quickly subdue predators."
+            },
+            "Reinforced Trap": {
+                "Type": "Trap",
+                "Level Required": 40,
+                "Value": 400,
+                "Rate": 1.0,
+                "Description": "A reinforced trap capable of capturing larger predators."
+            },
+            "Mythril Trap": {
+                "Type": "Trap",
+                "Level Required": 50,
+                "Value": 750,
+                "Rate": 0.9,
+                "Description": "A rare mythril trap used by expert hunters to capture dangerous predators."
+            },
+            "Void Trap": {
+                "Type": "Trap",
+                "Level Required": 60,
+                "Value": 1500,
+                "Rate": 0.7,
+                "Description": "A legendary trap said to ensnare even the most elusive of creatures."
+            },
+            "Phantom Trap": {
+                "Type": "Trap",
+                "Level Required": 70,
+                "Value": 3000,
+                "Rate": 0.5,
+                "Description": "A phantom trap used to capture creatures that exist between worlds."
+            },
+            "Celestial Trap": {
+                "Type": "Trap",
+                "Level Required": 82,
+                "Value": 5000,
+                "Rate": 0.4,
+                "Description": "A trap infused with celestial energy, capable of capturing the most powerful predators."
+            },
+            "Elder Trap": {
+                "Type": "Trap",
+                "Level Required": 95,
+                "Value": 8000,
+                "Rate": 0.3,
+                "Description": "A trap forged by the elders, capable of capturing even the most elusive and powerful creatures."
+            }
+        }
+    },
+    "Gathering": {
+        "Axe": {
+            "Basic Axe": {
+                "Type": "Axe",
+                "Level Required": 1,
+                "Value": 20,
+                "Rate": 1.4,
+                "Description": "A basic axe for chopping down small trees and gathering wood."
+            },
+            "Steel Axe": {
+                "Type": "Axe",
+                "Level Required": 10,
+                "Value": 80,
+                "Rate": 1.2,
+                "Description": "A sturdy steel axe used for gathering wood from tougher trees."
+            },
+            "Iron Axe": {
+                "Type": "Axe",
+                "Level Required": 20,
+                "Value": 160,
+                "Rate": 1.0,
+                "Description": "An iron axe capable of felling large trees with ease."
+            },
+            "Mythril Axe": {
+                "Type": "Axe",
+                "Level Required": 35,
+                "Value": 300,
+                "Rate": 0.9,
+                "Description": "A mythril axe that gathers wood more efficiently."
+            },
+            "Ancient Axe": {
+                "Type": "Axe",
+                "Level Required": 50,
+                "Value": 500,
+                "Rate": 0.8,
+                "Description": "An ancient axe, forged with magical properties for swift woodcutting."
+            },
+            "Celestial Axe": {
+                "Type": "Axe",
+                "Level Required": 60,
+                "Value": 1000,
+                "Rate": 0.7,
+                "Description": "A celestial axe, said to be blessed by the forest spirits for gathering."
+            },
+            "Dragonwood Axe": {
+                "Type": "Axe",
+                "Level Required": 70,
+                "Value": 1500,
+                "Rate": 0.6,
+                "Description": "An axe crafted from dragonwood, known for its unmatched efficiency."
+            },
+            "Void Axe": {
+                "Type": "Axe",
+                "Level Required": 82,
+                "Value": 3000,
+                "Rate": 0.5,
+                "Description": "An otherworldly axe that bends space and time, making gathering nearly instantaneous."
+            },
+            "Elderwood Axe": {
+                "Type": "Axe",
+                "Level Required": 95,
+                "Value": 5000,
+                "Rate": 0.4,
+                "Description": "A legendary axe, said to be crafted from the oldest trees in existence."
+            }
+        },
+        "Foraging Basket": {
+            "Basic Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 1,
+                "Value": 10,
+                "Rate": 1.5,
+                "Description": "A simple basket used for gathering fruits, herbs, and other small plants."
+            },
+            "Reinforced Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 10,
+                "Value": 50,
+                "Rate": 1.3,
+                "Description": "A reinforced basket designed to gather more plants efficiently."
+            },
+            "Golden Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 20,
+                "Value": 100,
+                "Rate": 1.1,
+                "Description": "A golden basket capable of gathering rare plants with ease."
+            },
+            "Mystic Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 35,
+                "Value": 200,
+                "Rate": 1.0,
+                "Description": "A mystical basket used by expert gatherers for efficient foraging."
+            },
+            "Celestial Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 50,
+                "Value": 400,
+                "Rate": 0.8,
+                "Description": "A legendary basket that can gather even the rarest of plants."
+            },
+            "Ancient Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 60,
+                "Value": 800,
+                "Rate": 0.7,
+                "Description": "A basket crafted from ancient fibers, known for its incredible efficiency."
+            },
+            "Void Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 70,
+                "Value": 1500,
+                "Rate": 0.6,
+                "Description": "A basket said to hold infinite space, allowing you to gather endlessly."
+            },
+            "Phantom Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 82,
+                "Value": 3000,
+                "Rate": 0.5,
+                "Description": "A basket made from phantom threads, allowing the user to gather at incredible speeds."
+            },
+            "Elder Basket": {
+                "Type": "Foraging Basket",
+                "Level Required": 95,
+                "Value": 5000,
+                "Rate": 0.4,
+                "Description": "A legendary basket, said to be crafted by the gods for the most skilled gatherers."
+            }
+        },
+        "Sickle": {
+            "Basic Sickle": {
+                "Type": "Sickle",
+                "Level Required": 1,
+                "Value": 15,
+                "Rate": 1.6,
+                "Description": "A basic sickle used for harvesting herbs and crops."
+            },
+            "Iron Sickle": {
+                "Type": "Sickle",
+                "Level Required": 10,
+                "Value": 60,
+                "Rate": 1.4,
+                "Description": "An iron sickle that harvests plants more efficiently."
+            },
+            "Steel Sickle": {
+                "Type": "Sickle",
+                "Level Required": 20,
+                "Value": 120,
+                "Rate": 1.2,
+                "Description": "A sturdy steel sickle used to harvest a wider range of plants."
+            },
+            "Mythril Sickle": {
+                "Type": "Sickle",
+                "Level Required": 35,
+                "Value": 250,
+                "Rate": 1.0,
+                "Description": "A mythril sickle capable of harvesting rare plants quickly."
+            },
+            "Void Sickle": {
+                "Type": "Sickle",
+                "Level Required": 50,
+                "Value": 600,
+                "Rate": 0.8,
+                "Description": "A sickle imbued with void energy, making harvesting an effortless task."
+            },
+            "Celestial Sickle": {
+                "Type": "Sickle",
+                "Level Required": 60,
+                "Value": 1200,
+                "Rate": 0.7,
+                "Description": "A celestial sickle, said to gather plants with unmatched speed and precision."
+            },
+            "Dragonbone Sickle": {
+                "Type": "Sickle",
+                "Level Required": 70,
+                "Value": 2500,
+                "Rate": 0.6,
+                "Description": "A sickle made from dragonbone, capable of harvesting even the toughest plants."
+            },
+            "Phantom Sickle": {
+                "Type": "Sickle",
+                "Level Required": 82,
+                "Value": 5000,
+                "Rate": 0.5,
+                "Description": "A sickle crafted from phantom energy, allowing for instant plant gathering."
+            },
+            "Elder Sickle": {
+                "Type": "Sickle",
+                "Level Required": 95,
+                "Value": 8000,
+                "Rate": 0.4,
+                "Description": "A legendary sickle, forged from ancient energy, used by the greatest of harvesters."
+            }
+        }
+    }
+}    

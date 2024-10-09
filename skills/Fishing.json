@@ -1,0 +1,268 @@
+{
+    "area_unlocks": {
+        "Tranquil Pond": 1,
+        "Misty Brook": 5,
+        "Coral Coast": 12,
+        "Shimmering Lagoon": 20,
+        "Sunken Reef": 28,
+        "Frozen Fjord": 35,
+        "Cursed Marsh": 45,
+        "Elysian Waters": 55,
+        "Starlight Cove": 65,
+        "Abyssal Depths": 75,
+        "Celestial Tide": 85,
+        "Void Abyss": 95
+    },
+    "fish_unlocks": [
+        {
+            "fish_name": "Minnow",
+            "level_required": 1,
+            "experience_per_gather": 10
+        },
+        {
+            "fish_name": "Trout",
+            "level_required": 5,
+            "experience_per_gather": 20
+        },
+        {
+            "fish_name": "Salmon",
+            "level_required": 10,
+            "experience_per_gather": 35
+        },
+        {
+            "fish_name": "Golden Koi",
+            "level_required": 15,
+            "experience_per_gather": 50
+        },
+        {
+            "fish_name": "Silverfish",
+            "level_required": 12,
+            "experience_per_gather": 30
+        },
+        {
+            "fish_name": "Coral Bass",
+            "level_required": 20,
+            "experience_per_gather": 65
+        },
+        {
+            "fish_name": "Sunfish",
+            "level_required": 25,
+            "experience_per_gather": 80
+        },
+        {
+            "fish_name": "Rainbow Eel",
+            "level_required": 28,
+            "experience_per_gather": 95
+        },
+        {
+            "fish_name": "Frostfin",
+            "level_required": 35,
+            "experience_per_gather": 100
+        },
+        {
+            "fish_name": "Anglerfish",
+            "level_required": 40,
+            "experience_per_gather": 150
+        },
+        {
+            "fish_name": "Moonlit Snapper",
+            "level_required": 40,
+            "experience_per_gather": 120
+        },
+        {
+            "fish_name": "Ice Pike",
+            "level_required": 42,
+            "experience_per_gather": 140
+        },
+        {
+            "fish_name": "Ghost Carp",
+            "level_required": 45,
+            "experience_per_gather": 200
+        },
+        {
+            "fish_name": "Swamp Catfish",
+            "level_required": 48,
+            "experience_per_gather": 160
+        },
+        {
+            "fish_name": "Elysian Snapper",
+            "level_required": 55,
+            "experience_per_gather": 250
+        },
+        {
+            "fish_name": "Azure Tetra",
+            "level_required": 58,
+            "experience_per_gather": 180
+        },
+        {
+            "fish_name": "Starlight Ray",
+            "level_required": 65,
+            "experience_per_gather": 300
+        },
+        {
+            "fish_name": "Nebula Guppy",
+            "level_required": 68,
+            "experience_per_gather": 240
+        },
+        {
+            "fish_name": "Abyssal Leviathan",
+            "level_required": 75,
+            "experience_per_gather": 400
+        },
+        {
+            "fish_name": "Void Angler",
+            "level_required": 78,
+            "experience_per_gather": 350
+        },
+        {
+            "fish_name": "Celestial Trout",
+            "level_required": 85,
+            "experience_per_gather": 500
+        },
+        {
+            "fish_name": "Galactic Manta",
+            "level_required": 88,
+            "experience_per_gather": 450
+        },
+        {
+            "fish_name": "Phantom Sturgeon",
+            "level_required": 90,
+            "experience_per_gather": 550
+        },
+        {
+            "fish_name": "Void Leviathan",
+            "level_required": 95,
+            "experience_per_gather": 600
+        },
+        {
+            "fish_name": "Cosmic Whale",
+            "level_required": 100,
+            "experience_per_gather": 700
+        }
+    ],
+    "areas": {
+        "Tranquil Pond": {
+            "description": "A calm, peaceful pond where minnows dart about in the clear water.",
+            "distance": 5,
+            "fish": {
+                "Minnow": 30,
+                "Trout": 15,
+                "Silverfish": 10,
+                "Golden Koi": 5
+            }
+        },
+        "Misty Brook": {
+            "description": "A flowing brook shrouded in mist, home to a variety of freshwater fish.",
+            "distance": 8,
+            "fish": {
+                "Minnow": 20,
+                "Trout": 25,
+                "Salmon": 10,
+                "Rainbow Eel": 5
+            }
+        },
+        "Coral Coast": {
+            "description": "A beautiful coral-filled shoreline, teeming with colorful fish and marine life.",
+            "distance": 12,
+            "fish": {
+                "Coral Bass": 25,
+                "Sunfish": 15,
+                "Golden Koi": 10,
+                "Silverfish": 8,
+                "Rainbow Eel": 6
+            }
+        },
+        "Shimmering Lagoon": {
+            "description": "A lagoon with shimmering waters where rare fish can be found among the reeds.",
+            "distance": 18,
+            "fish": {
+                "Golden Koi": 30,
+                "Trout": 15,
+                "Salmon": 10,
+                "Sunfish": 5
+            }
+        },
+        "Sunken Reef": {
+            "description": "A reef submerged beneath the waves, rich with marine life and sunken treasures.",
+            "distance": 20,
+            "fish": {
+                "Coral Bass": 25,
+                "Sunfish": 20,
+                "Anglerfish": 10,
+                "Silverfish": 8,
+                "Rainbow Eel": 6
+            }
+        },
+        "Frozen Fjord": {
+            "description": "An icy fjord where the cold waters hide fish adapted to extreme temperatures.",
+            "distance": 25,
+            "fish": {
+                "Frostfin": 30,
+                "Anglerfish": 20,
+                "Salmon": 15,
+                "Ice Pike": 10,
+                "Moonlit Snapper": 5
+            }
+        },
+        "Cursed Marsh": {
+            "description": "A dark and ominous marsh where eerie fish lurk in the shadows.",
+            "distance": 35,
+            "fish": {
+                "Ghost Carp": 35,
+                "Anglerfish": 25,
+                "Swamp Catfish": 15,
+                "Silverfish": 10
+            }
+        },
+        "Elysian Waters": {
+            "description": "A serene and enchanted water body where rare and mythical fish swim.",
+            "distance": 50,
+            "fish": {
+                "Elysian Snapper": 40,
+                "Ghost Carp": 20,
+                "Sunfish": 10,
+                "Azure Tetra": 5
+            }
+        },
+        "Starlight Cove": {
+            "description": "A magical cove where the waters glow under the starlit sky, attracting radiant fish.",
+            "distance": 55,
+            "fish": {
+                "Starlight Ray": 50,
+                "Elysian Snapper": 20,
+                "Golden Koi": 10,
+                "Nebula Guppy": 5
+            }
+        },
+        "Abyssal Depths": {
+            "description": "A deep and dark ocean trench where the most fearsome creatures of the sea reside.",
+            "distance": 65,
+            "fish": {
+                "Abyssal Leviathan": 45,
+                "Anglerfish": 25,
+                "Ghost Carp": 15,
+                "Void Angler": 10
+            }
+        },
+        "Celestial Tide": {
+            "description": "An otherworldly shore where fish seem to shimmer with the light of the stars.",
+            "distance": 75,
+            "fish": {
+                "Celestial Trout": 60,
+                "Starlight Ray": 35,
+                "Elysian Snapper": 25,
+                "Galactic Manta": 15
+            }
+        },
+        "Void Abyss": {
+            "description": "A bottomless trench where time and space twist, hiding the most elusive and dangerous fish in the world.",
+            "distance": 90,
+            "fish": {
+                "Void Leviathan": 60,
+                "Abyssal Leviathan": 50,
+                "Phantom Sturgeon": 30,
+                "Cosmic Whale": 15
+            }
+        }
+    }
+}

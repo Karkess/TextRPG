@@ -1,0 +1,97 @@
+{
+    "Goblin": {
+      "description": "A small and weak creature often found in caves.",
+      "level": "random.randint(1, 3)",
+      "health": "50 + random.randint(5 * (level-1), 15 * (level-1))",
+      "strength": "10 + random.randint(2, 5) * (level)",
+      "magical_attack": "2 + random.randint(1, 3)",
+      "physical_defense": "3 + random.randint(1, 2)",
+      "magic_defense": "2 + random.randint(0, 1)",
+      "physical_accuracy": "60 + random.randint(0, 5)",
+      "magical_accuracy": "55 + random.randint(0, 5)",
+      "dexterity": "random.randint(1, 3)",
+      "name_color": "{GREEN}",
+      "entry_message": "{GREEN}The Goblin approaches you for combat. It's doing something in-between walking and scurrying. It does not appear very intimidating...",
+      "death_message": "{GREEN}The goblin falls to the ground, defeated.",
+      "experience": "random.randint(10, 20)",
+      "attacks": [
+        "Slash",
+        "Fireball"
+      ],
+      "drop_table": [
+        {
+          "item": "Health Potion",
+          "weight": 0.5,
+          "quantity": "random.randint(1, 2)"
+        }
+      ],
+      "AI": {
+        "type": "Basic",
+        "weights": {
+          "Slash": 8,
+          "Fireball": 2
+        }
+      }
+    },
+    "Eye Gouger": {
+      "description": "I hope you brought Z87+ glasses.",
+      "level": "random.randint(5,7)",
+      "health": "250",
+      "strength": "65",
+      "magical_attack": "0",
+      "physical_defense": "0",
+      "magic_defense": "0",
+      "physical_accuracy": "95",
+      "magical_accuracy": "0",
+      "dexterity": "random.randint(5, 10)",
+      "name_color": "{RED}",
+      "entry_message": "{RED}{ITALIC}The Eye Gouger turns it's head towards you slowly and stares in your direction with blood leaking from its empty sockets. Its blade appears freshly used...",
+      "death_message": "{RED}{ITALIC}Exhausted, the Eye Gouger turns its blade on itself. It makes a horrifying shriek before plunging its blade into its own chest. It drops to the ground, slowly convulsing. You are unsure if it is truly dead...",
+      "experience": "250",
+      "attacks": [
+        "Slash",
+        "Gouge Eyes"
+      ],
+      "drop_table": [],
+      "AI": {
+        "type": "Basic",
+        "weights": {
+          "Slash": 7,
+          "Gouge Eyes": 3
+        }
+      }
+    },
+    "Cloaker": {
+      "description": "A dark mid-sized flying monster with a body that resembles a stingray. They are equipped with needle-like teeth, sharp claws, and a long barbed tail.",
+      "level": "random.randint(20, 30)",
+      "health": "100",
+      "strength": "20",
+      "magical_attack": "0",
+      "physical_defense": "20",
+      "magic_defense": "0",
+      "physical_accuracy": "10",
+      "magical_accuracy": "100",
+      "dexterity": "random.randint(10, 20)",
+      "name_color": "{RED}",
+      "entry_message": "{CYAN}{ITALIC}An encroaching darkness and sense of danger enshrouds the area. You hear a distinct clicking sound grow louder. A Cloaker approaches...",
+      "death_message": "The Cloaker falls to the ground, defeated.",
+      "experience": "100",
+      "attacks": [
+        "Bite",
+        "Tail Whip",
+        "Screech"
+      ],
+      "drop_table": [
+        {
+          "item": "Cloaker Flesh",
+          "weight": 1.0,
+          "quantity": "0 + random.randint(1, 3)"
+        }
+      ],
+      "AI": {
+        "type": "Advanced",
+        "logic": "Cloaker uses 'Screech' if user has more than 50% health. Otherwise, use 'Bite'."
+      }
+    }
+  }
+  

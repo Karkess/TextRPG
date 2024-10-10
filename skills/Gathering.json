@@ -150,7 +150,7 @@
             "resource_name": "Veilshadow Wood",
             "class": "Woodcutting",
             "level_required": 85,
-            "experience_per_gather": 200,
+            "experience_per_gather": 500,
             "tool_required": "Axe"
         },
         {
@@ -258,7 +258,7 @@
             "description": "A mystical wilderness where only the rarest and most powerful resources are found.",
             "distance": 90,
             "resources": {
-                "Veilshadow Wood": 30,
+                "Veilshadow Wood": 23,
                 "Phantom Petal": 20,
                 "Voidroot": 15
             }

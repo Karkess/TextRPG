@@ -120,9 +120,9 @@
             "experience": 0
         },
         "Gathering": {
-            "current": 84,
+            "current": 86,
             "max": 250,
-            "experience": 1041731
+            "experience": 1136531
         },
         "Hunting": {
             "current": 2,
@@ -179,7 +179,8 @@
         "Ancient Yew Log": 1485,
         "Celestial Vine": 2510,
         "Tempestwood Log": 1428,
-        "Voidroot": 1439
+        "Voidroot": 1908,
+        "Veilshadow Wood": 2
     },
     "consumables": {
         "Health Potion": 5,
@@ -234,7 +235,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 0
+        "Current_Capacity": 20
     },
     "status_effects": {
         "buffs": {},

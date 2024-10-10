@@ -1,17 +1,18 @@
 import os
 import requests
 import shutil
+from utils import resource_path
 
 # Define URLs for the version and the executable
-VERSION_URL = "https://raw.githubusercontent.com/Karkess/TextRPG/main/version.txt"  # Update this with your repo's actual raw version.txt URL
-EXECUTABLE_URL = "https://github.com/Karkess/TextRPG/releases/latest/download/Game.exe"  # Update with the location of your compiled .exe file
+VERSION_URL = "https://raw.githubusercontent.com/Karkess/TextRPG/main/version.txt"
+REPO_URL = "https://github.com/Karkess/TextRPG/archive/refs/heads/main.zip"
 LOCAL_VERSION_FILE = "./version.txt"
-LOCAL_EXECUTABLE = "./Game.exe"  # Path to your local executable
+EXCLUDED_FOLDERS = ["./dist/saves", "./saves"]  # Folders to exclude from deletion
 
 # Function to check for updates
 def check_for_update():
-    # Get the latest version from GitHub
     try:
+        # Get the latest version from GitHub
         response = requests.get(VERSION_URL)
         response.raise_for_status()
         latest_version = response.text.strip()
@@ -25,29 +26,77 @@ def check_for_update():
 
         # Compare versions
         if current_version != latest_version:
-            print(f"New version available: {latest_version}. Downloading update...")
-            download_update()
+            print(f"New version available: {latest_version}.")
+            update_prompt = input("Do you want to download and install the update? (y/n): ").strip().lower()
+            if update_prompt == 'y':
+                download_and_install_update()
+            else:
+                print("Continuing without updating...")
         else:
             print("You have the latest version.")
     except Exception as e:
         print(f"Error while checking for updates: {e}")
 
-# Function to download and update the game executable
-def download_update():
+# Function to download and install the latest update
+def download_and_install_update():
     try:
-        # Download the latest executable
-        with requests.get(EXECUTABLE_URL, stream=True) as r:
-            r.raise_for_status()
-            with open("Game_new.exe", "wb") as f:
-                shutil.copyfileobj(r.raw, f)
+        # Print the current working directory for debugging
+        print("Current working directory:", os.getcwd())
 
-        # Replace the old executable with the new one
-        if os.path.exists(LOCAL_EXECUTABLE):
-            os.remove(LOCAL_EXECUTABLE)
-        os.rename("Game_new.exe", LOCAL_EXECUTABLE)
-        print("Update completed successfully.")
+        # Ensure that the ./dist folder exists, use resource_path for proper path handling
+        dist_folder = resource_path("./dist")
+        if not os.path.exists(dist_folder):
+            os.makedirs(dist_folder)
+            print(f"Created {dist_folder} folder.")
+
+        print("Downloading the latest version...")
+        response = requests.get(REPO_URL, stream=True)
+        response.raise_for_status()
+
+        # Save the downloaded zip file to ./dist using resource_path
+        zip_path = resource_path(os.path.join(dist_folder, "latest.zip"))
+        with open(zip_path, "wb") as file:
+            for chunk in response.iter_content(chunk_size=128):
+                file.write(chunk)
+
+        print("Download complete. Extracting files...")
+
+        # Extract the zip file to ./dist/latest_update/ using resource_path
+        extract_path = resource_path(os.path.join(dist_folder, "latest_update"))
+        shutil.unpack_archive(zip_path, extract_path)
+
+        # Locate the extracted root folder (e.g., ./dist/latest_update/TextRPG-main/)
+        extracted_root_folder = os.path.join(extract_path, "TextRPG-main")
+
+        # Remove all old files except the excluded ones (./dist/saves/ and ./saves)
+        for root, dirs, files in os.walk(".", topdown=True):
+            dirs[:] = [d for d in dirs if os.path.join(root, d) not in EXCLUDED_FOLDERS]
+            for file in files:
+                file_path = os.path.join(root, file)
+                if not any(excluded in file_path for excluded in EXCLUDED_FOLDERS):
+                    os.remove(file_path)
+
+        # Move files from the extracted root folder to the current directory
+        for root, dirs, files in os.walk(extracted_root_folder):
+            for file in files:
+                src_file = os.path.join(root, file)
+                relative_path = os.path.relpath(src_file, extracted_root_folder)
+                dest_file = resource_path(os.path.join(".", relative_path))
+                dest_dir = os.path.dirname(dest_file)
+                os.makedirs(dest_dir, exist_ok=True)
+                shutil.move(src_file, dest_file)
+
+        # Clean up: remove the zip file and extracted update folder
+        os.remove(zip_path)
+        shutil.rmtree(extract_path)
+
+        print("Update installed successfully.")
     except Exception as e:
-        print(f"Error during download: {e}")
+        print(f"Error during update: {e}")
+
+        print("Update installed successfully.")
+    except Exception as e:
+        print(f"Error during update: {e}")
 
 if __name__ == "__main__":
     check_for_update()

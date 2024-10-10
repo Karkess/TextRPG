@@ -13,6 +13,9 @@ from skills.Fishing import fishing_menu
 from skills.Gathering import gathering_menu
 from combat.CombatMenu import combat_menu
 from combat.CombatLogic import check_player_stats
+from updater import check_for_update
+
+check_for_update()
 
 # Load a specific save
 def load_game(file_name):

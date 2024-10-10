@@ -42,7 +42,7 @@ def build_executable():
         "--noconfirm",  # Automatically overwrite the previous build
         "--hidden-import=platform",  # Ensure the platform module is included
         "--hidden-import=os",        # Ensure os module is included
-        "--hidden-import=numpy"      # Ensure numpy is included
+        "--hidden-import=requests"   # Ensure requests is included
     ]
 
     # Add all files in the root directory and subfolders

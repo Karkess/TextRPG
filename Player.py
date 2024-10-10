@@ -1,6 +1,5 @@
 import json
 import math
-import numpy as np
 from utils import clear_screen, load_json_data
 
 # Load player data from JSON
@@ -112,7 +111,7 @@ def calculate_travel_stats(player_data):
     load_ratio = current_capacity / total_capacity
 
     decay_rate = 0.75  # Decay rate for load factor
-    load_factor = np.exp(-load_ratio * decay_rate)
+    load_factor = math.exp(-load_ratio * decay_rate)
     adjusted_speed = total_speed * load_factor
     
     # Calculate the travel time modifier

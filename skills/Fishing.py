@@ -3,15 +3,7 @@ import time
 import os
 import sys
 import Player
-
-# Function to clear the screen
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-# Function to clear the current line in the terminal
-def clear_current_line():
-    sys.stdout.write("\r" + " " * 50 + "\r")  # Overwrite the line with spaces and move cursor back to the start
-    sys.stdout.flush()
+from utils import clear_screen, clear_current_line, load_json_data
 
 # Save player data to JSON
 def save_player(player_data, file_name):
@@ -19,23 +11,6 @@ def save_player(player_data, file_name):
         json.dump(player_data, file, indent=4)
     print(f"Player data saved to {file_name}")
 
-# Load the fishing data from the JSON file
-def load_fishing_data(file_name):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
-
-# Load item data (including weights of fish)
-def load_item_data(file_name):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
 
 # Example function to get unlocked areas based on player level
 def get_unlocked_areas(fishing_data, player_level):
@@ -87,7 +62,7 @@ def fishing_menu(player_data):
 # Function to view the area level up table
 def view_area_level_up_table():
     clear_screen()
-    fishing_data = load_fishing_data("skills/Fishing.json")
+    fishing_data = load_json_data("skills/Fishing.json")
     
     print("Area Unlock Table:")
     for area, level_required in fishing_data["area_unlocks"].items():
@@ -98,7 +73,7 @@ def view_area_level_up_table():
 # Function to view the fish level up table
 def view_fish_level_up_table():
     clear_screen()
-    fishing_data = load_fishing_data("skills/Fishing.json")
+    fishing_data = load_json_data("skills/Fishing.json")
     
     print("Fish Unlock Table:")
     for fish in fishing_data["fish_unlocks"]:
@@ -109,7 +84,7 @@ def view_fish_level_up_table():
 # Function to visit fishing spots that the player has unlocked
 def visit_fishing_spot(player_data):
     clear_screen()
-    fishing_data = load_fishing_data("skills/Fishing.json")
+    fishing_data = load_json_data("skills/Fishing.json")
     
     print("Available Fishing Spots:")
     player_level = player_data["skills"]["Fishing"]["current"]
@@ -142,7 +117,7 @@ def visit_fishing_spot(player_data):
         time.sleep(1)
 
 def fish_menu(player_data, selected_spot):
-    fishing_data = load_fishing_data("skills/Fishing.json")
+    fishing_data = load_json_data("skills/Fishing.json")
     
     while True:
         clear_screen()
@@ -176,18 +151,6 @@ def fish_menu(player_data, selected_spot):
             print("Invalid choice.")
             time.sleep(1)
 
-import sys
-import time
-
-# Load tools data
-def load_tools_data(file_name):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
-
 # Function to show a progress bar and handle fishing process
 def show_progress_bar(total_time):
     for i in range(total_time):
@@ -209,7 +172,7 @@ def calculate_travel_time(player_data, distance):
     return base_travel_time * travel_time_modifier
 
 def travel_to_fishing_spot(player_data, selected_spot):
-    fishing_data = load_fishing_data("skills/Fishing.json")
+    fishing_data = load_json_data("skills/Fishing.json")
     distance = fishing_data["areas"].get(selected_spot, {}).get("distance", 0)
 
     # Automatically reset the cart's current capacity before starting the trip to fish
@@ -225,7 +188,7 @@ def travel_to_fishing_spot(player_data, selected_spot):
 
 # Travel back from the fishing spot after fishing
 def travel_back_from_fishing_spot(player_data, selected_spot):
-    fishing_data = load_fishing_data("skills/Fishing.json")
+    fishing_data = load_json_data("skills/Fishing.json")
     distance = fishing_data["areas"].get(selected_spot, {}).get("distance", 0)
 
     # Calculate the travel time using the distance and player's travel setup
@@ -240,7 +203,7 @@ def view_fish(player_data):
     clear_screen()
     
     # Load the item data to get fish information
-    item_data = load_item_data("items/Items.json")
+    item_data = load_json_data("items/Items.json")
     
     # Get the player's inventory
     inventory = player_data.get("inventory", {})
@@ -278,9 +241,9 @@ def view_fish(player_data):
 def fish(player_data, selected_spot):
     clear_screen()
 
-    fishing_data = load_fishing_data("skills/Fishing.json")
-    tools_data = load_tools_data("items/Tools.json")
-    item_data = load_item_data("items/Items.json")  # Load the item data to get fish weights
+    fishing_data = load_json_data("skills/Fishing.json")
+    tools_data = load_json_data("items/Tools.json")
+    item_data = load_json_data("items/Items.json")  # Load the item data to get fish weights
 
     fishing_level = player_data["skills"]["Fishing"]["current"]
     equipped_tool = player_data["tools"].get("Fishing", None)
@@ -339,7 +302,7 @@ def fish(player_data, selected_spot):
             current_xp = skill["experience"]
 
             # Load the level-up table to get the XP needed for the next level
-            level_up_table = Player.load_level_up_table("./skills/LevelUpTable.json")
+            level_up_table = load_json_data("./skills/LevelUpTable.json")
             xp_for_next_level = level_up_table.get(str(current_level + 1), None)
 
             if xp_for_next_level:

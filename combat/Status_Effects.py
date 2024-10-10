@@ -1,13 +1,9 @@
 import json
 import math
-
-# Load Status Effects data
-def load_status_effects():
-    with open("./combat/Status_Effects.json", "r") as file:
-        return json.load(file)
+from utils import load_json_data
 
 def apply_status_effect(character, effect_name, effect_type, duration, stacks=1):
-    status_effects = load_status_effects()
+    status_effects = load_json_data("./combat/Status_Effects.json")
 
     if effect_type == "buff":
         effect_info = status_effects['Buffs'].get(effect_name)
@@ -63,7 +59,7 @@ def apply_status_effect(character, effect_name, effect_type, duration, stacks=1)
 
 # Remove a status effect
 def remove_status_effect(character, effect_name, effect_type):
-    status_effects = load_status_effects()
+    status_effects = load_json_data("./combat/Status_Effects.json")
     
     if effect_type == "buff":
         effect_info = status_effects['Buffs'].get(effect_name)

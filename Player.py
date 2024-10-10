@@ -1,15 +1,7 @@
 import json
 import math
 import numpy as np
-
-# Load level-up table
-def load_level_up_table(file_name):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
+from utils import clear_screen, load_json_data
 
 # Load player data from JSON
 def load_player(file_name):
@@ -28,7 +20,7 @@ def save_player(player_data, file_name):
 # Add experience to a skill and check for level-ups
 def add_experience(player_data, skill_name, experience_gained):
     # Load the level-up table
-    level_up_table = load_level_up_table("./skills/LevelUpTable.json")
+    level_up_table = load_json_data("./skills/LevelUpTable.json")
     
     # Get the current skill level and experience
     skill = player_data["skills"].get(skill_name)
@@ -75,18 +67,9 @@ def add_item(player_data, item_name, quantity=1):
     # Save player data after adding item
     save_player(player_data, f"./saves/{player_data['name']}-SaveData.json")
 
-# Load travel data (carts, animals) from Travel.json
-def load_travel_data(file_name="./items/Travel.json"):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
-
 # Calculate total stats and travel modifier based on Travel.json
 def calculate_travel_stats(player_data):
-    travel_data = load_travel_data()
+    travel_data = load_json_data(file_name="./items/Travel.json")
     
     # Get the equipped cart and animals
     cart_name = player_data["travel"].get("Cart")
@@ -154,7 +137,8 @@ def display_travel_stats(player_data):
 # Create a new player with default values
 def create_new_player(PlayerName):
     return {
-        "name": f"{PlayerName}",
+        "name": PlayerName,
+        "save_location": f"./saves/{PlayerName}-SaveData.json",
         "description": "A brave adventurer.",
         "level": 1,
         "health": {"base": 100, "current": 100, "max": 100},
@@ -164,59 +148,106 @@ def create_new_player(PlayerName):
         "magic_defense": {"base": 6, "current": 6, "max": 6},
         "physical_accuracy": {"base": 70, "current": 70, "max": 70},
         "magical_accuracy": {"base": 60, "current": 60, "max": 60},
+        "dexterity": {"base": 5, "current": 5, "max": 5},
         "experience": 0,
-        "attacks": ["Punch", "Fireball"],
+        "basic_attack": "Slash",
+        "attacks": ["Fireball"],
         "primary_class": "Warrior",
         "secondary_class": "Mage",
         "classes": {
             "Warrior": {
                 "level": 1,
                 "experience": 0,
-                "health_modifier": 50,
-                "strength_modifier": 20,
-                "magical_attack_modifier": 0,
-                "physical_defense_modifier": 15,
-                "magic_defense_modifier": 5,
-                "physical_accuracy_modifier": 10,
-                "magical_accuracy_modifier": 0,
-                "attacks": ["Slash", "Power Strike"]
+                "health": 30,
+                "strength": 10,
+                "magical_attack": 0,
+                "physical_defense": 8,
+                "magic_defense": 2,
+                "physical_accuracy": 10,
+                "magical_accuracy": 0,
+                "dexterity": 5,
+                "attacks": ["Fireball", "Status Test", "Vampiric Pact"]
             },
             "Mage": {
                 "level": 1,
                 "experience": 0,
-                "health_modifier": 20,
-                "strength_modifier": 5,
-                "magical_attack_modifier": 40,
-                "physical_defense_modifier": 5,
-                "magic_defense_modifier": 25,
-                "physical_accuracy_modifier": 5,
-                "magical_accuracy_modifier": 15,
-                "attacks": ["Magic Missile", "Fireball"]
+                "health": 10,
+                "strength": 2,
+                "magical_attack": 10,
+                "physical_defense": 4,
+                "magic_defense": 8,
+                "physical_accuracy": 5,
+                "magical_accuracy": 15,
+                "dexterity": 3,
+                "attacks": ["Magic Missile", "Fireball", "Self Heal", "Healing Spell"]
             }
         },
         "skills": {
-            "Mining": {"current": 1, "max": 99, "experience": 0},
-            "Smithing": {"current": 1, "max": 99, "experience": 0},
-            "Crafting": {"current": 1, "max": 99, "experience": 0},
-            "Fletching": {"current": 1, "max": 99, "experience": 0},
-            "Chemistry": {"current": 1, "max": 99, "experience": 0},
-            "Alchemy": {"current": 1, "max": 99, "experience": 0},
-            "Gathering": {"current": 1, "max": 99, "experience": 0},
-            "Hunting": {"current": 1, "max": 99, "experience": 0},
-            "Fishing": {"current": 1, "max": 99, "experience": 0},
-            "Cooking": {"current": 1, "max": 99, "experience": 0},
-            "Construction": {"current": 1, "max": 99, "experience": 0},
-            "Bartering": {"current": 1, "max": 99, "experience": 0}
+            "Mining": {"current": 1, "max": 250, "experience": 0},
+            "Smithing": {"current": 1, "max": 250, "experience": 0},
+            "Crafting": {"current": 1, "max": 250, "experience": 0},
+            "Fletching": {"current": 1, "max": 250, "experience": 0},
+            "Chemistry": {"current": 1, "max": 250, "experience": 0},
+            "Alchemy": {"current": 1, "max": 250, "experience": 0},
+            "Gathering": {"current": 1, "max": 250, "experience": 0},
+            "Hunting": {"current": 1, "max": 250, "experience": 0},
+            "Fishing": {"current": 1, "max": 250, "experience": 0},
+            "Cooking": {"current": 1, "max": 250, "experience": 0},
+            "Construction": {"current": 1, "max": 250, "experience": 0},
+            "Bartering": {"current": 1, "max": 250, "experience": 0},
+            "Agility": {"current": 1, "max": 250, "experience": 0}
         },
         "inventory": {
             "Denarius": 50
         },
+        "consumables": {},
+        "equipped": {
+            "weapons": {
+                "main_hand": "Basic Main Hand",
+                "offhand": "Basic Shield",
+                "extra": "Basic Dagger"
+            },
+            "armor": {
+                "helmet": "Basic Helmet",
+                "cape": "Basic Cape",
+                "neck": "Basic Necklace",
+                "shoulders": "Basic Shoulders",
+                "chest": "Basic Chestplate",
+                "legs": "Basic Leggings",
+                "gloves": "Basic Gloves",
+                "boots": "Basic Boots",
+                "ring_1": "Basic Ring 1",
+                "ring_2": "Basic Ring 2"
+            },
+            "companion": ""
+        },
+        "boosts": {},
         "tools": {
-            "Mining": "Rusty Pickaxe"
+            "Mining": "Rusty Pickaxe",
+            "Fishing": "Basic Fishing Rod",
+            "Hunting": {
+                "Snare": "Basic Snare",
+                "Bow": "Hunting Bow",
+                "Trap": "Small Trap"
+            },
+            "Gathering": {
+                "Axe": "Basic Axe",
+                "Foraging Basket": "Basic Basket",
+                "Sickle": "Basic Sickle"
+            }
         },
         "travel": {
             "Cart": "Handcart",
             "Animals": [],
-            "Capacity": 100
-        }
+            "Max_Capacity": 100,
+            "Current_Capacity": 0
+        },
+        "status_effects": {
+            "buffs": {},
+            "debuffs": {}
+        },
+        "stats": {},
+        "initial_stats": {},
+        "combat_stats": {}
     }
+

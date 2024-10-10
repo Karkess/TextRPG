@@ -3,10 +3,8 @@ import time
 import os
 import sys
 import Player
+from utils import clear_screen, load_json_data
 
-# Function to clear the screen
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 # Function to clear the current line in the terminal
 def clear_current_line():
@@ -19,23 +17,6 @@ def save_player(player_data, file_name):
         json.dump(player_data, file, indent=4)
     print(f"Player data saved to {file_name}")
 
-# Load the hunting data from the JSON file
-def load_hunting_data(file_name):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
-
-# Load item data (including weights of animals)
-def load_item_data(file_name):
-    try:
-        with open(file_name, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(f"{file_name} not found.")
-        return {}
 
 # Example function to get unlocked areas based on player level
 def get_unlocked_areas(hunting_data, player_level):
@@ -87,7 +68,7 @@ def hunting_menu(player_data):
 # Function to view the area level up table
 def view_area_level_up_table():
     clear_screen()
-    hunting_data = load_hunting_data("skills/Hunting.json")
+    hunting_data = load_json_data("skills/Hunting.json")
     
     print("Area Unlock Table:")
     for area, level_required in hunting_data["area_unlocks"].items():
@@ -98,7 +79,7 @@ def view_area_level_up_table():
 # Function to view the animal level up table
 def view_animal_level_up_table():
     clear_screen()
-    hunting_data = load_hunting_data("skills/Hunting.json")
+    hunting_data = load_json_data("skills/Hunting.json")
     
     print("Animal Unlock Table:")
     for animal in hunting_data["animal_unlocks"]:
@@ -109,7 +90,7 @@ def view_animal_level_up_table():
 # Function to visit hunting grounds that the player has unlocked
 def visit_hunting_ground(player_data):
     clear_screen()
-    hunting_data = load_hunting_data("skills/Hunting.json")
+    hunting_data = load_json_data("skills/Hunting.json")
     
     print("Available Hunting Grounds:")
     player_level = player_data["skills"]["Hunting"]["current"]
@@ -142,7 +123,7 @@ def visit_hunting_ground(player_data):
         time.sleep(1)
 
 def hunt_menu(player_data, selected_ground):
-    hunting_data = load_hunting_data("skills/Hunting.json")
+    hunting_data = load_json_data("skills/Hunting.json")
     
     while True:
         clear_screen()
@@ -162,7 +143,7 @@ def hunt_menu(player_data, selected_ground):
             print(f"\n{description}")
             print("You spot the following animals:")
             
-            tools_data = load_tools_data("items/Tools.json")  # Load tools data
+            tools_data = load_json_data("items/Tools.json")  # Load tools data
             
             for animal_name in animals_in_ground:
                 # Find the corresponding animal in the animal unlocks data
@@ -184,7 +165,7 @@ def hunt_menu(player_data, selected_ground):
             time.sleep(1)
 
 # Load tools data
-def load_tools_data(file_name):
+def load_json_data(file_name):
     try:
         with open(file_name, "r") as file:
             return json.load(file)
@@ -213,7 +194,7 @@ def calculate_travel_time(player_data, distance):
     return base_travel_time * travel_time_modifier
 
 def travel_to_hunting_ground(player_data, selected_ground):
-    hunting_data = load_hunting_data("skills/Hunting.json")
+    hunting_data = load_json_data("skills/Hunting.json")
     distance = hunting_data["areas"].get(selected_ground, {}).get("distance", 0)
 
     # Automatically reset the cart's current capacity before starting the trip to hunt
@@ -229,7 +210,7 @@ def travel_to_hunting_ground(player_data, selected_ground):
 
 # Travel back from the hunting ground after hunting
 def travel_back_from_hunting_ground(player_data, selected_ground):
-    hunting_data = load_hunting_data("skills/Hunting.json")
+    hunting_data = load_json_data("skills/Hunting.json")
     distance = hunting_data["areas"].get(selected_ground, {}).get("distance", 0)
 
     # Calculate the travel time using the distance and player's travel setup
@@ -244,7 +225,7 @@ def view_animals(player_data):
     clear_screen()
     
     # Load the item data to get animal information
-    item_data = load_item_data("items/Items.json")
+    item_data = load_json_data("items/Items.json")
     
     # Get the player's inventory
     inventory = player_data.get("inventory", {})
@@ -282,9 +263,9 @@ def view_animals(player_data):
 def hunt(player_data, selected_ground):
     clear_screen()
 
-    hunting_data = load_hunting_data("skills/Hunting.json")
-    tools_data = load_tools_data("items/Tools.json")
-    item_data = load_item_data("items/Items.json")  # Load the item data to get animal weights
+    hunting_data = load_json_data("skills/Hunting.json")
+    tools_data = load_json_data("items/Tools.json")
+    item_data = load_json_data("items/Items.json")  # Load the item data to get animal weights
 
     hunting_level = player_data["skills"]["Hunting"]["current"]
     
@@ -342,7 +323,7 @@ def hunt(player_data, selected_ground):
             current_xp = skill["experience"]
 
             # Load the level-up table to get the XP needed for the next level
-            level_up_table = Player.load_level_up_table("./skills/LevelUpTable.json")
+            level_up_table = load_json_data("./skills/LevelUpTable.json")
             xp_for_next_level = level_up_table.get(str(current_level + 1), None)
 
             if xp_for_next_level:

@@ -92,7 +92,7 @@
         "Mining": {
             "current": 100,
             "max": 250,
-            "experience": 3132239
+            "experience": 3132249
         },
         "Smithing": {
             "current": 1,
@@ -157,7 +157,7 @@
     },
     "inventory": {
         "Denarius": 50,
-        "Stone": 400,
+        "Stone": 401,
         "Copper": 35,
         "Coal": 19,
         "Iron": 1,
@@ -234,46 +234,10 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 46.5
+        "Current_Capacity": 0
     },
     "status_effects": {
         "buffs": {},
         "debuffs": {}
-    },
-    "stats": {
-        "health": 135,
-        "strength": 29,
-        "magical_attack": 20,
-        "physical_defense": 67,
-        "magic_defense": 40,
-        "physical_accuracy": 83,
-        "magical_accuracy": 68,
-        "dexterity": 14,
-        "fatigue": 186,
-        "mana": 356
-    },
-    "initial_stats": {
-        "health": 135,
-        "strength": 29,
-        "magical_attack": 20,
-        "physical_defense": 67,
-        "magic_defense": 40,
-        "physical_accuracy": 83,
-        "magical_accuracy": 68,
-        "dexterity": 14,
-        "fatigue": 186,
-        "mana": 356
-    },
-    "combat_stats": {
-        "health": 131,
-        "strength": 29,
-        "magical_attack": 20,
-        "physical_defense": 67,
-        "magic_defense": 40,
-        "physical_accuracy": 83,
-        "magical_accuracy": 68,
-        "dexterity": 14,
-        "fatigue": 186,
-        "mana": 356
     }
 }

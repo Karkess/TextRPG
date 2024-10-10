@@ -1,3 +1,83 @@
+import subprocess
+import os
+import json
+import time
+import sys
+import traceback
+from utils import clear_screen, print_skills
+from Player import create_new_player
+from Player import save_player
+from skills.Mining import mining_menu
+from skills.Hunting import hunting_menu
+from skills.Fishing import fishing_menu
+from skills.Gathering import gathering_menu
+from combat.CombatMenu import combat_menu
+from combat.CombatLogic import check_player_stats
+
+# Load a specific save
+def load_game(file_name):
+    with open(f"./saves/{file_name}", "r") as file:
+        return json.load(file)
+
+# Main gameplay menu
+def gameplay_menu(player_data):
+    while True:
+        clear_screen()
+        print(f"Welcome {player_data['name']}!")
+        print("1. Adventure")
+        print("2. Skills")
+        print("3. Return to Town")
+        print("4. Personal Outpost")
+        print("5. View Stats")
+        print("6. View Inventory")
+        print("7. Return to Main Menu")
+        
+        choice = input("Select an option: ").strip()
+        
+        if choice == "1":
+            print("Starting Adventure...")
+            combat_menu(player_data)
+        elif choice == "2":
+            skills_menu(player_data)
+        elif choice == "3":
+            print("Returning to Town...")
+            time.sleep(1)  # Placeholder delay
+        elif choice == "4":
+            print("Going to Personal Outpost...")
+            time.sleep(1)  # Placeholder delay
+        elif choice == "5":
+            clear_screen()
+            check_player_stats(player_data)
+            input("\nPress Enter to Continue to Skills")
+            clear_screen()
+            print_skills(player_data)
+            input("\nPress Enter to Return to Main Menu")
+            clear_screen()
+        elif choice == "6":
+            print("Viewing Inventory... (To be implemented)")
+            time.sleep(1)
+        elif choice == "7":
+            return
+        else:
+            print("Invalid choice. Please select a valid option.")
+            time.sleep(1)
+
+# Main menu
+def list_saved_games():
+    saves_dir = "./saves/"
+    saves = []
+    if not os.path.exists(saves_dir):
+        os.makedirs(saves_dir)
+
+    # Loop through each file in the saves directory
+    for file_name in os.listdir(saves_dir):
+        if file_name.endswith(".json"):
+            with open(os.path.join(saves_dir, file_name), "r") as file:
+                data = json.load(file)
+                saves.append({"name": data["name"], "level": data["level"], "file_name": file_name})
+    return saves
+
+import subprocess
 import os
 import json
 import time
@@ -189,3 +269,72 @@ def skills_menu(player_data):
 if __name__ == "__main__":
     clear_screen()
     main_menu()
+
+
+def skills_menu(player_data):
+    while True:
+        clear_screen()
+        print("Skills Menu:")
+        print("1. Mining")
+        print("2. Smithing")
+        print("3. Crafting")
+        print("4. Fletching")
+        print("5. Chemistry")
+        print("6. Alchemy")
+        print("7. Gathering")
+        print("8. Hunting")
+        print("9. Fishing")
+        print("10. Cooking")
+        print("11. Construction")
+        print("12. Back to Main Menu")
+        
+        choice = input("Select a skill: ").strip()
+        
+        if choice == "1":
+            mining_menu(player_data)  # Now calling the mining menu from Mining.py
+        elif choice == "2":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "3":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "4":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "5":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "6":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "7":
+            gathering_menu(player_data)
+        elif choice == "8":
+            hunting_menu(player_data)
+        elif choice == "9":
+            fishing_menu(player_data)
+        elif choice == "10":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "11":
+            print("This skill is currently unavailable.")
+            time.sleep(1)
+        elif choice == "12":
+            return
+        else:
+            print("Invalid choice.")
+            time.sleep(1)
+
+
+if __name__ == "__main__":
+    clear_screen()
+    try:
+        main_menu()  # Start the game by calling the main menu
+    except Exception as e:
+        # Print the full traceback of the exception
+        print("An error occurred:", e)
+        traceback.print_exc()
+        
+        # Prevent the terminal from closing
+        input("\nPress Enter to close the game...")
+        sys.exit(1)

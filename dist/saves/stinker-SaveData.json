@@ -1,0 +1,242 @@
+{
+    "name": "stinker",
+    "save_location": "./saves/stinker-SaveData.json",
+    "description": "A brave adventurer.",
+    "level": 1,
+    "health": {
+        "base": 100,
+        "current": 100,
+        "max": 100
+    },
+    "strength": {
+        "base": 10,
+        "current": 10,
+        "max": 10
+    },
+    "magical_attack": {
+        "base": 5,
+        "current": 5,
+        "max": 5
+    },
+    "physical_defense": {
+        "base": 8,
+        "current": 8,
+        "max": 8
+    },
+    "magic_defense": {
+        "base": 6,
+        "current": 6,
+        "max": 6
+    },
+    "physical_accuracy": {
+        "base": 70,
+        "current": 70,
+        "max": 70
+    },
+    "magical_accuracy": {
+        "base": 60,
+        "current": 60,
+        "max": 60
+    },
+    "dexterity": {
+        "base": 5,
+        "current": 5,
+        "max": 5
+    },
+    "experience": 0,
+    "basic_attack": "Slash",
+    "attacks": [
+        "Fireball"
+    ],
+    "primary_class": "Warrior",
+    "secondary_class": "Mage",
+    "classes": {
+        "Warrior": {
+            "level": 1,
+            "experience": 0,
+            "health": 30,
+            "strength": 10,
+            "magical_attack": 0,
+            "physical_defense": 8,
+            "magic_defense": 2,
+            "physical_accuracy": 10,
+            "magical_accuracy": 0,
+            "dexterity": 5,
+            "attacks": [
+                "Fireball",
+                "Status Test",
+                "Vampiric Pact"
+            ]
+        },
+        "Mage": {
+            "level": 1,
+            "experience": 0,
+            "health": 10,
+            "strength": 2,
+            "magical_attack": 10,
+            "physical_defense": 4,
+            "magic_defense": 8,
+            "physical_accuracy": 5,
+            "magical_accuracy": 15,
+            "dexterity": 3,
+            "attacks": [
+                "Magic Missile",
+                "Fireball",
+                "Self Heal",
+                "Healing Spell"
+            ]
+        }
+    },
+    "skills": {
+        "Mining": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Smithing": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Crafting": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Fletching": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Chemistry": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Alchemy": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Gathering": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Hunting": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Fishing": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Cooking": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Construction": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Bartering": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Agility": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        }
+    },
+    "inventory": {
+        "Denarius": 50
+    },
+    "consumables": {},
+    "equipped": {
+        "weapons": {
+            "main_hand": "Basic Main Hand",
+            "offhand": "Basic Shield",
+            "extra": "Basic Dagger"
+        },
+        "armor": {
+            "helmet": "Basic Helmet",
+            "cape": "Basic Cape",
+            "neck": "Basic Necklace",
+            "shoulders": "Basic Shoulders",
+            "chest": "Basic Chestplate",
+            "legs": "Basic Leggings",
+            "gloves": "Basic Gloves",
+            "boots": "Basic Boots",
+            "ring_1": "Basic Ring 1",
+            "ring_2": "Basic Ring 2"
+        },
+        "companion": ""
+    },
+    "boosts": {},
+    "tools": {
+        "Mining": "Rusty Pickaxe",
+        "Fishing": "Basic Fishing Rod",
+        "Hunting": {
+            "Snare": "Basic Snare",
+            "Bow": "Hunting Bow",
+            "Trap": "Small Trap"
+        },
+        "Gathering": {
+            "Axe": "Basic Axe",
+            "Foraging Basket": "Basic Basket",
+            "Sickle": "Basic Sickle"
+        }
+    },
+    "travel": {
+        "Cart": "Handcart",
+        "Animals": [],
+        "Max_Capacity": 100,
+        "Current_Capacity": 0
+    },
+    "status_effects": {
+        "buffs": {},
+        "debuffs": {}
+    },
+    "stats": {
+        "health": 135,
+        "strength": 24,
+        "magical_attack": 10,
+        "physical_defense": 64,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 176,
+        "mana": 336
+    },
+    "initial_stats": {
+        "health": 135,
+        "strength": 24,
+        "magical_attack": 10,
+        "physical_defense": 64,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 176,
+        "mana": 336
+    },
+    "combat_stats": {
+        "health": 14,
+        "strength": 24,
+        "magical_attack": 10,
+        "physical_defense": 64,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 176,
+        "mana": 336
+    }
+}

@@ -1,5 +1,6 @@
 import json
 import random
+from utils import load_json_data
 
 # Helper function to process formula input
 def process_formula_input(formula_input):
@@ -25,7 +26,7 @@ def add_enemy_to_json(file_name):
     try:
         # Load existing data from the JSON file
         with open(file_name, "r") as file:
-            enemy_data = json.load(file)
+            enemy_data = load_json_data(file)
     except FileNotFoundError:
         # If the file doesn't exist, start with an empty dictionary
         enemy_data = {}

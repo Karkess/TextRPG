@@ -1,7 +1,8 @@
 import os
 import platform
 import re
-
+import sys
+import json
 # utils.py
 
 # Reset all attributes
@@ -89,6 +90,29 @@ def clear_screen():
         os.system('cls')
     else:
         os.system('clear')
+
+# Function to clear the current line in the terminal
+def clear_current_line():
+    sys.stdout.write("\r" + " " * 50 + "\r")  # Overwrite the line with spaces and move cursor back to the start
+    sys.stdout.flush()
+    
+# Utility function to get resource path (compatible with PyInstaller executable)
+def resource_path(relative_path):
+    """ Get the absolute path to a resource, works for PyInstaller bundle """
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+# General JSON loader function
+def load_json_data(file_name):
+    try:
+        with open(resource_path(file_name), "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print(f"{file_name} not found.")
+        return {}
 
 # Function to print skills with custom formatting
 def print_skills(player_data):

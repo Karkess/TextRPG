@@ -1,9 +1,9 @@
 import json
 import random
+from utils import load_json_data
 
-# Load JSON data
-with open("enemies.json") as file:
-    enemy_data = json.load(file)
+
+enemy_data = load_json_data("enemies.json")
 
 # Function to create an enemy from template
 def create_enemy(enemy_type):

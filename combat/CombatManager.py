@@ -4,35 +4,18 @@ import json
 import math
 import time
 from utils import *
-from combat.CombatLogic import execute_attack, calculate_combat_stats, select_basic_ai_attack, load_equipment_data
+from combat.CombatLogic import execute_attack, calculate_combat_stats, select_basic_ai_attack
 from enemies.AdvancedAI import select_advanced_ai_attack  # Custom AI logic for advanced enemies
 from combat.SpecialAttacks import handle_special_effect  # Handle special attacks
 import importlib
-from combat.Status_Effects import load_status_effects
 from Player import save_player
 
 # Dynamically import the Status_Effects module
 status_effects_module = importlib.import_module('combat.Status_Effects')
 
-# Load attacks data from Attacks.json
-def load_attacks_data():
-    with open("./combat/Attacks.json", "r") as file:
-        return json.load(file)
-
-# Load enemy data from Enemies.json
-def load_enemies_data():
-    with open("./enemies/Enemies.json", "r") as file:
-        return json.load(file)
-
-# Load player data from player save JSON file
-def load_player_data(player_save_path):
-    with open(player_save_path, "r") as file:
-        return json.load(file)
-
-# Load enemy data from Enemies.json
 
 def load_enemy_data(enemy_names):
-    with open("./enemies/Enemies.json", "r") as file:
+    with open(resource_path("./enemies/Enemies.json")) as file:
         enemies_data = json.load(file)
 
     enemies = []
@@ -69,36 +52,6 @@ def load_enemy_data(enemy_names):
         else:
             print(f"Enemy '{enemy_name}' not found in Enemies.json")
     
-    return enemies
-
-
-# Get enemy stats and details from Enemies.json
-def get_enemies(enemy_names, enemies_data):
-    enemies = []
-    for enemy_name in enemy_names:
-        if enemy_name in enemies_data:
-            enemy_template = enemies_data[enemy_name]
-            enemy = {
-                "name": enemy_name,
-                "description": enemy_template["description"],
-                "stats": {
-                    "level": eval(enemy_template["level"]),
-                    "health": eval(enemy_template["health"]),
-                    "strength": eval(enemy_template["strength"]),
-                    "magical_attack": eval(enemy_template["magical_attack"]),
-                    "physical_defense": eval(enemy_template["physical_defense"]),
-                    "magic_defense": eval(enemy_template["magic_defense"]),
-                    "physical_accuracy": eval(enemy_template["physical_accuracy"]),
-                    "magical_accuracy": eval(enemy_template["magical_accuracy"]),
-                    "dexterity": eval(enemy_template["dexterity"]),
-                    "experience": eval(enemy_template["experience"]),
-                    "fatigue": 100,  # Initial value
-                    "mana": 100  # Initial value
-                },
-                "attacks": enemy_template["attacks"],
-                "AI": enemy_template.get("AI", {"type": "Basic", "weights": {}})
-            }
-            enemies.append(enemy)
     return enemies
 
 def display_combat_status(player, enemies):
@@ -375,7 +328,7 @@ def process_status_effects(character, is_player=False):
     for category in ['buffs', 'debuffs']:
         for effect_name, effect_data in list(character['status_effects'][category].items()):
             # Retrieve the actual effect logic function and apply it
-            effect_info = status_effects_module.load_status_effects()[category.capitalize()].get(effect_name)
+            effect_info = effect_info or load_json_data("./combat/Status_Effects.json")['Common'].get(effect_name)
             if effect_info:
                 effect_func = getattr(status_effects_module, effect_info['Effect'])
                 effect_func(character, effect_data['stacks'])  # Apply the effect with stacks
@@ -436,15 +389,14 @@ def clean_up_player_after_combat(player):
 
 # Combat loop
 def combat_loop(player, enemy_names):
-    attacks_data = load_attacks_data()  # Load attacks from Attacks.json
+    attacks_data = load_json_data("./combat/Attacks.json") # Load attacks from Attacks.json
     combat_log = []  # Store the combat log
     turn_counter = 1  # Initialize the turn counter
     
     # Calculate player's combat stats
-    equipment_data = load_equipment_data()
+    equipment_data = load_json_data("./items/Equipment.json")  # Load equipment data from Equipment.json
     player['stats'] = calculate_combat_stats(player, equipment_data)
-    # Load enemies and calculate their stats
-    enemies = load_enemy_data(enemy_names)  # Load enemies data from Enemies.json
+    enemies = load_enemy_data(enemy_names) 
     
     for enemy in enemies:
         enemy['stats'] = calculate_combat_stats(enemy, {})  # Assuming no equipment for enemies
@@ -462,7 +414,7 @@ def combat_loop(player, enemy_names):
     all_attacks = list(set(player['attacks'] + primary_class_attacks + secondary_class_attacks))
 
     # Calculate initial stats for player and enemies and store them
-    player_initial_stats = calculate_combat_stats(player, load_equipment_data())
+    player_initial_stats = calculate_combat_stats(player, load_json_data("./items/Equipment.json"))
     player['initial_stats'] = player_initial_stats.copy()  # Store player's initial stats
 
     for enemy in enemies:

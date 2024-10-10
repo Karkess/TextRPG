@@ -4,10 +4,6 @@ import re
 import math
 import random
 from utils import *
-# Load the Equipment data from ./items/Equipment.json
-def load_equipment_data():
-    with open("./items/Equipment.json", "r") as file:
-        return json.load(file)
 
 # Get the stats of a specific item by name from the Equipment JSON
 def get_item_stats(item_name, equipment_data):
@@ -147,7 +143,7 @@ def check_stats(player_data, equipment_data):
 # Main function to check stats, now accepting player_data as an argument
 def check_player_stats(player_data):
     # Load equipment data
-    equipment_data = load_equipment_data()
+    equipment_data = load_json_data("items/Equipment.json")
 
     # Check stats
     check_stats(player_data, equipment_data)

@@ -1,0 +1,279 @@
+{
+    "name": "Karkess",
+    "save_location": "./saves/Karkess-SaveData.json",
+    "description": "A brave adventurer.",
+    "level": 1,
+    "health": {
+        "base": 100,
+        "current": 100,
+        "max": 100
+    },
+    "strength": {
+        "base": 10,
+        "current": 10,
+        "max": 10
+    },
+    "magical_attack": {
+        "base": 5,
+        "current": 5,
+        "max": 5
+    },
+    "physical_defense": {
+        "base": 8,
+        "current": 8,
+        "max": 8
+    },
+    "magic_defense": {
+        "base": 6,
+        "current": 6,
+        "max": 6
+    },
+    "physical_accuracy": {
+        "base": 70,
+        "current": 70,
+        "max": 70
+    },
+    "magical_accuracy": {
+        "base": 60,
+        "current": 60,
+        "max": 60
+    },
+    "dexterity": {
+        "base": 5,
+        "current": 5,
+        "max": 5
+    },
+    "experience": 0,
+    "basic_attack": "Slash",
+    "attacks": [
+        "Fireball",
+        "Status Test",
+        "Vampiric Pact"
+    ],
+    "primary_class": "Warrior",
+    "secondary_class": "Mage",
+    "classes": {
+        "Warrior": {
+            "level": 1,
+            "experience": 0,
+            "health": 30,
+            "strength": 10,
+            "magical_attack": 0,
+            "physical_defense": 8,
+            "magic_defense": 2,
+            "physical_accuracy": 10,
+            "magical_accuracy": 0,
+            "dexterity": 5,
+            "attacks": [
+                "Slash",
+                "Power Strike"
+            ]
+        },
+        "Mage": {
+            "level": 1,
+            "experience": 0,
+            "health": 10,
+            "strength": 2,
+            "magical_attack": 10,
+            "physical_defense": 4,
+            "magic_defense": 8,
+            "physical_accuracy": 5,
+            "magical_accuracy": 15,
+            "dexterity": 3,
+            "attacks": [
+                "Magic Missile",
+                "Fireball",
+                "Healing Spell",
+                "Self Heal"
+            ]
+        }
+    },
+    "skills": {
+        "Mining": {
+            "current": 100,
+            "max": 250,
+            "experience": 3132249
+        },
+        "Smithing": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Crafting": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Fletching": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Chemistry": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Alchemy": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Gathering": {
+            "current": 84,
+            "max": 250,
+            "experience": 1041731
+        },
+        "Hunting": {
+            "current": 2,
+            "max": 250,
+            "experience": 100
+        },
+        "Fishing": {
+            "current": 1,
+            "max": 250,
+            "experience": 10
+        },
+        "Cooking": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Construction": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Bartering": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        },
+        "Agility": {
+            "current": 1,
+            "max": 250,
+            "experience": 0
+        }
+    },
+    "inventory": {
+        "Denarius": 50,
+        "Stone": 401,
+        "Copper": 35,
+        "Coal": 19,
+        "Iron": 1,
+        "Silver": 1231,
+        "Wildberry": 39,
+        "Rabbit": 10,
+        "Minnow": 1,
+        "Maple Log": 13,
+        "Fae Ore": 2201,
+        "Obsidium": 368,
+        "Aetherium": 2457,
+        "Voidstone": 231,
+        "Void Keystone": 8,
+        "Strawberry": 62,
+        "Golden Lily": 32,
+        "Moonwort": 2190,
+        "Redwood Log": 475,
+        "Witchbloom": 304,
+        "Ancient Yew Log": 1485,
+        "Celestial Vine": 2510,
+        "Tempestwood Log": 1428,
+        "Voidroot": 1439
+    },
+    "consumables": {
+        "Health Potion": 5,
+        "Mana Potion": 3,
+        "Stamina Potion": 2,
+        "Elixir of Strength": 1,
+        "Elixir of Magic": 1,
+        "Elixir of Defense": 1,
+        "Elixir of Accuracy": 1,
+        "Elixir of Dexterity": 1
+    },
+    "equipped": {
+        "weapons": {
+            "main_hand": "Basic Main Hand",
+            "offhand": "Basic Shield",
+            "extra": "Basic Dagger"
+        },
+        "armor": {
+            "helmet": "Basic Helmet",
+            "cape": "Basic Cape",
+            "neck": "Basic Necklace",
+            "shoulders": "Basic Shoulders",
+            "chest": "Basic Chestplate",
+            "legs": "Basic Leggings",
+            "gloves": "Basic Gloves",
+            "boots": "Basic Boots",
+            "ring_1": "Basic Ring 1",
+            "ring_2": "Basic Ring 2"
+        },
+        "companion": ""
+    },
+    "boosts": {
+        "strength": 5,
+        "magical_attack": 10,
+        "physical_defense": 3
+    },
+    "tools": {
+        "Mining": "Iron Pickaxe",
+        "Fishing": "Basic Fishing Rod",
+        "Hunting": {
+            "Snare": "Basic Snare",
+            "Bow": "Hunting Bow",
+            "Trap": "Small Trap"
+        },
+        "Gathering": {
+            "Axe": "Basic Axe",
+            "Foraging Basket": "Basic Basket",
+            "Sickle": "Basic Sickle"
+        }
+    },
+    "travel": {
+        "Cart": "Handcart",
+        "Animals": [],
+        "Max_Capacity": 100,
+        "Current_Capacity": 0
+    },
+    "status_effects": {
+        "buffs": {},
+        "debuffs": {}
+    },
+    "stats": {
+        "health": 135,
+        "strength": 29,
+        "magical_attack": 20,
+        "physical_defense": 67,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 186,
+        "mana": 356
+    },
+    "initial_stats": {
+        "health": 135,
+        "strength": 29,
+        "magical_attack": 20,
+        "physical_defense": 67,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 186,
+        "mana": 356
+    },
+    "combat_stats": {
+        "health": 135,
+        "strength": 29,
+        "magical_attack": 20,
+        "physical_defense": 67,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 186,
+        "mana": 356
+    }
+}

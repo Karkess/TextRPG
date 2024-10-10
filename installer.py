@@ -69,5 +69,4 @@ def build_executable():
     subprocess.run(command_str, shell=True)
 
 if __name__ == "__main__": 
-    run_updater()  # Check for updates
     build_executable()  # Build the new executable

@@ -5,6 +5,7 @@ import time
 from utils import clear_screen, print_skills
 from Player import create_new_player
 from Player import save_player
+from skills.skills import compare_skills
 from skills.Mining import mining_menu
 from skills.Hunting import hunting_menu
 from skills.Fishing import fishing_menu
@@ -17,7 +18,6 @@ def load_game(file_name):
     with open(f"./saves/{file_name}", "r") as file:
         return json.load(file)
 
-# Main gameplay menu
 def gameplay_menu(player_data):
     while True:
         clear_screen()
@@ -28,7 +28,8 @@ def gameplay_menu(player_data):
         print("4. Personal Outpost")
         print("5. View Stats")
         print("6. View Inventory")
-        print("7. Return to Main Menu")
+        print("7. Compare Skills")
+        print("8. Return to Main Menu")
         
         choice = input("Select an option: ").strip()
         
@@ -55,10 +56,20 @@ def gameplay_menu(player_data):
             print("Viewing Inventory... (To be implemented)")
             time.sleep(1)
         elif choice == "7":
+            saved_games = list_saved_games()
+            if len(saved_games) >= 2:
+                player1_data = load_game(saved_games[0]["file_name"])
+                player2_data = load_game(saved_games[1]["file_name"])
+                compare_skills(player1_data, player2_data)
+            else:
+                print("Not enough save files to compare.")
+                time.sleep(1)
+        elif choice == "8":
             return
         else:
             print("Invalid choice. Please select a valid option.")
             time.sleep(1)
+
 
 # Main menu
 def list_saved_games():

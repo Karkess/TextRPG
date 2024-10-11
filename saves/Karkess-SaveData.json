@@ -122,7 +122,7 @@
         "Gathering": {
             "current": 98,
             "max": 250,
-            "experience": 2623601
+            "experience": 2625361
         },
         "Hunting": {
             "current": 2,
@@ -181,7 +181,7 @@
         "Tempestwood Log": 1428,
         "Voidroot": 1908,
         "Veilshadow Wood": 586,
-        "Phantom Petal": 2716
+        "Phantom Petal": 2720
     },
     "consumables": {
         "Health Potion": 5,
@@ -236,7 +236,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 99.5
+        "Current_Capacity": 1.5
     },
     "status_effects": {
         "buffs": {},

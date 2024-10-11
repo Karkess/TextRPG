@@ -121,7 +121,7 @@
         "Gathering": {
             "current": 50,
             "max": 250,
-            "experience": 85917
+            "experience": 86133
         },
         "Hunting": {
             "current": 1,
@@ -161,7 +161,7 @@
         "Golden Lily": 77,
         "Lavender Blossom": 68,
         "Spruce Log": 44,
-        "Crimson Thorn": 2220
+        "Crimson Thorn": 2226
     },
     "consumables": {},
     "equipped": {
@@ -203,7 +203,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 22.399999999999984
+        "Current_Capacity": 24.799999999999976
     },
     "status_effects": {
         "buffs": {},

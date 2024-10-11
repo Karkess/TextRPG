@@ -29,7 +29,7 @@ def gameplay_menu(player_data):
         print("5. View Stats")
         print("6. View Inventory")
         print("7. Compare Skills")
-        print("8. Return to Main Menu")
+        print("8. Exit to Main Menu")
         
         choice = input("Select an option: ").strip()
         

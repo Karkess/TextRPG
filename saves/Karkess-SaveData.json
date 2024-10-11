@@ -120,9 +120,9 @@
             "experience": 0
         },
         "Gathering": {
-            "current": 91,
+            "current": 92,
             "max": 250,
-            "experience": 1662611
+            "experience": 1712801
         },
         "Hunting": {
             "current": 2,
@@ -172,7 +172,7 @@
         "Voidstone": 231,
         "Void Keystone": 8,
         "Strawberry": 62,
-        "Golden Lily": 32,
+        "Golden Lily": 34,
         "Moonwort": 2190,
         "Redwood Log": 475,
         "Witchbloom": 304,
@@ -181,7 +181,7 @@
         "Tempestwood Log": 1428,
         "Voidroot": 1908,
         "Veilshadow Wood": 586,
-        "Phantom Petal": 532
+        "Phantom Petal": 646
     },
     "consumables": {
         "Health Potion": 5,
@@ -236,7 +236,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 7.0
+        "Current_Capacity": 0.5
     },
     "status_effects": {
         "buffs": {},

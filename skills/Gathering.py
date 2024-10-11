@@ -133,6 +133,7 @@ def gather_menu(player_data, selected_area):
             # Display the area's description and available resources
             description = gathering_data["areas"].get(selected_area, {}).get("description", "No description available.")
             resources_in_area = gathering_data["areas"].get(selected_area, {}).get("resources", {})
+            clear_screen()
             print(f"\n{description}")
             print("You spot the following resources:")
 
@@ -361,7 +362,7 @@ def gather_resource(player_data, selected_area):
             else:
                 time_to_next_level_formatted = "MAX level reached"
 
-            print(f"Gathering time per resource: {gathering_time_per_resource} seconds | Resources gathered per hour: {3600 / gathering_time_per_resource:.2f}")
+            print(f"Gathering time per resource: {round(gathering_time_per_resource)} seconds | Resources gathered per hour: {3600 / gathering_time_per_resource:.2f}")
             print(f"Experience per hour: {xp_per_hour:.2f} XP/hour | Time to level: {time_to_next_level_formatted}")
 
             while True:

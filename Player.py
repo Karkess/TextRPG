@@ -1,6 +1,6 @@
 import json
 import math
-from utils import clear_screen, load_json_data
+from utils import *
 
 # Load player data from JSON
 def load_player(file_name):
@@ -15,6 +15,17 @@ def load_player(file_name):
 def save_player(player_data, file_name):
     with open(file_name, "w") as file:
         json.dump(player_data, file, indent=4)
+
+# List of colors for rainbow effect (using bright foreground colors)
+RAINBOW_COLORS = [BRIGHT_RED, BRIGHT_YELLOW, BRIGHT_GREEN, BRIGHT_CYAN, BRIGHT_BLUE, BRIGHT_MAGENTA]
+
+# Function to print text in a rainbow pattern
+def rainbow_text(text):
+    result = []
+    for i, char in enumerate(text):
+        color = RAINBOW_COLORS[i % len(RAINBOW_COLORS)]  # Cycle through colors
+        result.append(f"{color}{char}{RESET}")  # Format each character with a color
+    return ''.join(result)
 
 # Add experience to a skill and check for level-ups
 def add_experience(player_data, skill_name, experience_gained):
@@ -35,7 +46,9 @@ def add_experience(player_data, skill_name, experience_gained):
     # Check for level-up
     while str(current_level + 1) in level_up_table and current_xp >= level_up_table[str(current_level + 1)]:
         current_level += 1
-        print(f"Congratulations! You've reached level {current_level} in {skill_name}.")
+        # Rainbow level-up message
+        message = f"Congratulations! You've reached level {current_level} in {skill_name}."
+        print(rainbow_text(message))
     
     # Calculate the XP needed for the next level
     if str(current_level + 1) in level_up_table:
@@ -52,6 +65,8 @@ def add_experience(player_data, skill_name, experience_gained):
     
     # Save player data after experience gain
     save_player(player_data, f"./saves/{player_data['name']}-SaveData.json")
+
+
 
 
 # Add item to the player's inventory

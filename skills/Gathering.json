@@ -80,14 +80,14 @@
             "resource_name": "Crimson Thorn",
             "class": "Harvesting",
             "level_required": 20,
-            "experience_per_gather": 34,
+            "experience_per_gather": 36,
             "tool_required": "Sickle"
         },
         {
             "resource_name": "Redwood Log",
             "class": "Woodcutting",
             "level_required": 30,
-            "experience_per_gather": 40,
+            "experience_per_gather": 45,
             "tool_required": "Axe"
         },
         {
@@ -187,15 +187,16 @@
             "resources": {
                 "Spruce Log": 20,
                 "Nighthaze Herb": 15,
-                "Crimson Thorn": 10
+                "Moonwort": 8
             }
         },
         "Whispering Marsh": {
             "description": "A misty, dark marsh filled with strange herbs and towering trees.",
             "distance": 18,
             "resources": {
+                "Spruce Log": 17,
                 "Redwood Log": 13,
-                "Everfrost Leaf": 10,
+                "Crimson Thorn": 10,
                 "Witchbloom": 14
             }
         },

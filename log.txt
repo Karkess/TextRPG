@@ -1,0 +1,16 @@
+[H[JMain Menu
+1. Load Game
+2. New Game
+3. Exit
+Select an option: Invalid choice. Please select a valid option.
+Main Menu
+1. Load Game
+2. New Game
+3. Exit
+Select an option: Traceback (most recent call last):
+  File "/home/ec2-user/TextRPG/Game.py", line 271, in <module>
+    main_menu()
+  File "/home/ec2-user/TextRPG/Game.py", line 164, in main_menu
+    choice = input("Select an option: ").strip()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -3,6 +3,7 @@ import time
 import os
 import sys
 import Player
+import math
 from utils import clear_screen, load_json_data, clear_current_line
 
 # Save player data to JSON
@@ -177,7 +178,7 @@ def load_json_data(file_name):
 
 # Function to show a progress bar and handle gathering process
 def show_progress_bar(total_time):
-    for i in range(total_time):
+    for i in range(math.ceil(total_time)):
         time.sleep(1)
         progress = (i + 1) / total_time * 100
         sys.stdout.write(f"\rProgress: [{int(progress)}%] ")
@@ -337,7 +338,7 @@ def gather_resource(player_data, selected_area):
 
             # Calculate gathering time and XP/hour
             tool_rate = tool_info["Rate"]
-            gathering_time_per_resource = int(base_rate * (1 - (gathering_level / 200)) * tool_rate)
+            gathering_time_per_resource = base_rate * (1 - (min(gathering_level, 199) / 200)) * tool_rate
             xp_per_hour = (3600 / gathering_time_per_resource) * experience  # Direct XP/hour calculation
 
             # Calculate time to level

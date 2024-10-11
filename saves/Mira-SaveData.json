@@ -1,6 +1,6 @@
 {
-    "name": "Karkess",
-    "save_location": "./saves/Karkess-SaveData.json",
+    "name": "Mira",
+    "save_location": "./saves/Mira-SaveData.json",
     "description": "A brave adventurer.",
     "level": 1,
     "health": {
@@ -46,9 +46,7 @@
     "experience": 0,
     "basic_attack": "Slash",
     "attacks": [
-        "Fireball",
-        "Status Test",
-        "Vampiric Pact"
+        "Fireball"
     ],
     "primary_class": "Warrior",
     "secondary_class": "Mage",
@@ -65,8 +63,9 @@
             "magical_accuracy": 0,
             "dexterity": 5,
             "attacks": [
-                "Slash",
-                "Power Strike"
+                "Fireball",
+                "Status Test",
+                "Vampiric Pact"
             ]
         },
         "Mage": {
@@ -83,16 +82,16 @@
             "attacks": [
                 "Magic Missile",
                 "Fireball",
-                "Healing Spell",
-                "Self Heal"
+                "Self Heal",
+                "Healing Spell"
             ]
         }
     },
     "skills": {
         "Mining": {
-            "current": 100,
+            "current": 1,
             "max": 250,
-            "experience": 3132249
+            "experience": 0
         },
         "Smithing": {
             "current": 1,
@@ -120,19 +119,19 @@
             "experience": 0
         },
         "Gathering": {
-            "current": 91,
+            "current": 14,
             "max": 250,
-            "experience": 1662611
+            "experience": 3369
         },
         "Hunting": {
-            "current": 2,
+            "current": 1,
             "max": 250,
-            "experience": 100
+            "experience": 0
         },
         "Fishing": {
             "current": 1,
             "max": 250,
-            "experience": 10
+            "experience": 0
         },
         "Cooking": {
             "current": 1,
@@ -157,42 +156,12 @@
     },
     "inventory": {
         "Denarius": 50,
-        "Stone": 401,
-        "Copper": 35,
-        "Coal": 19,
-        "Iron": 1,
-        "Silver": 1231,
-        "Wildberry": 39,
-        "Rabbit": 10,
-        "Minnow": 1,
-        "Maple Log": 13,
-        "Fae Ore": 2201,
-        "Obsidium": 368,
-        "Aetherium": 2457,
-        "Voidstone": 231,
-        "Void Keystone": 8,
-        "Strawberry": 62,
-        "Golden Lily": 32,
-        "Moonwort": 2190,
-        "Redwood Log": 475,
-        "Witchbloom": 304,
-        "Ancient Yew Log": 1485,
-        "Celestial Vine": 2510,
-        "Tempestwood Log": 1428,
-        "Voidroot": 1908,
-        "Veilshadow Wood": 586,
-        "Phantom Petal": 532
+        "Wildberry": 42,
+        "Strawberry": 59,
+        "Golden Lily": 71,
+        "Lavender Blossom": 63
     },
-    "consumables": {
-        "Health Potion": 5,
-        "Mana Potion": 3,
-        "Stamina Potion": 2,
-        "Elixir of Strength": 1,
-        "Elixir of Magic": 1,
-        "Elixir of Defense": 1,
-        "Elixir of Accuracy": 1,
-        "Elixir of Dexterity": 1
-    },
+    "consumables": {},
     "equipped": {
         "weapons": {
             "main_hand": "Basic Main Hand",
@@ -213,13 +182,9 @@
         },
         "companion": ""
     },
-    "boosts": {
-        "strength": 5,
-        "magical_attack": 10,
-        "physical_defense": 3
-    },
+    "boosts": {},
     "tools": {
-        "Mining": "Iron Pickaxe",
+        "Mining": "Rusty Pickaxe",
         "Fishing": "Basic Fishing Rod",
         "Hunting": {
             "Snare": "Basic Snare",
@@ -236,7 +201,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 7.0
+        "Current_Capacity": 18.600000000000023
     },
     "status_effects": {
         "buffs": {},

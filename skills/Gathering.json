@@ -157,7 +157,7 @@
             "resource_name": "Phantom Petal",
             "class": "Foraging",
             "level_required": 90,
-            "experience_per_gather": 220,
+            "experience_per_gather": 440,
             "tool_required": "Foraging Basket"
         }
     ],
@@ -259,7 +259,7 @@
             "distance": 90,
             "resources": {
                 "Veilshadow Wood": 23,
-                "Phantom Petal": 20,
+                "Phantom Petal": 18,
                 "Voidroot": 15
             }
         }

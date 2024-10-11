@@ -13,9 +13,6 @@ from skills.Fishing import fishing_menu
 from skills.Gathering import gathering_menu
 from combat.CombatMenu import combat_menu
 from combat.CombatLogic import check_player_stats
-from updater import check_for_update
-
-check_for_update()
 
 # Load a specific save
 def load_game(file_name):
@@ -331,13 +328,4 @@ def skills_menu(player_data):
 
 if __name__ == "__main__":
     clear_screen()
-    try:
-        main_menu()  # Start the game by calling the main menu
-    except Exception as e:
-        # Print the full traceback of the exception
-        print("An error occurred:", e)
-        traceback.print_exc()
-        
-        # Prevent the terminal from closing
-        input("\nPress Enter to close the game...")
-        sys.exit(1)
+    main_menu()  # Start the game by calling the main menu

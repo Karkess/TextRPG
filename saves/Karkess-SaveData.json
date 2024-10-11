@@ -120,9 +120,9 @@
             "experience": 0
         },
         "Gathering": {
-            "current": 86,
+            "current": 90,
             "max": 250,
-            "experience": 1136531
+            "experience": 1526931
         },
         "Hunting": {
             "current": 2,
@@ -180,7 +180,8 @@
         "Celestial Vine": 2510,
         "Tempestwood Log": 1428,
         "Voidroot": 1908,
-        "Veilshadow Wood": 2
+        "Veilshadow Wood": 576,
+        "Phantom Petal": 235
     },
     "consumables": {
         "Health Potion": 5,
@@ -235,7 +236,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 20
+        "Current_Capacity": 37.0
     },
     "status_effects": {
         "buffs": {},

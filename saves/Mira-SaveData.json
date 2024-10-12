@@ -121,7 +121,11 @@
         "Gathering": {
             "current": 54,
             "max": 250,
+<<<<<<< Updated upstream
             "experience": 117649
+=======
+            "experience": 238529
+>>>>>>> Stashed changes
         },
         "Hunting": {
             "current": 1,
@@ -162,7 +166,12 @@
         "Lavender Blossom": 68,
         "Spruce Log": 44,
         "Crimson Thorn": 2417,
+<<<<<<< Updated upstream
         "Witchbloom": 352
+=======
+        "Witchbloom": 561,
+        "Stardrop Fruit": 850
+>>>>>>> Stashed changes
     },
     "consumables": {},
     "equipped": {
@@ -204,7 +213,11 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
+<<<<<<< Updated upstream
         "Current_Capacity": 75.5
+=======
+        "Current_Capacity": 74.39999999999986
+>>>>>>> Stashed changes
     },
     "status_effects": {
         "buffs": {},

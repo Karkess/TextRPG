@@ -132,7 +132,11 @@
         "Fishing": {
             "current": 1,
             "max": 250,
+<<<<<<< Updated upstream
             "experience": 10
+=======
+            "experience": 870
+>>>>>>> Stashed changes
         },
         "Cooking": {
             "current": 1,
@@ -164,7 +168,11 @@
         "Silver": 1231,
         "Wildberry": 39,
         "Rabbit": 10,
+<<<<<<< Updated upstream
         "Minnow": 1,
+=======
+        "Minnow": 87,
+>>>>>>> Stashed changes
         "Maple Log": 13,
         "Fae Ore": 2201,
         "Obsidium": 368,
@@ -236,7 +244,11 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
+<<<<<<< Updated upstream
         "Current_Capacity": 57.5
+=======
+        "Current_Capacity": 85
+>>>>>>> Stashed changes
     },
     "status_effects": {
         "buffs": {

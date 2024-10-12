@@ -164,7 +164,10 @@
         "Silver": 1231,
         "Wildberry": 39,
         "Rabbit": 10,
+<<<<<<< Updated upstream
         "Minnow": 87,
+=======
+>>>>>>> Stashed changes
         "Minnow": 88,
         "Maple Log": 13,
         "Fae Ore": 2201,
@@ -268,7 +271,11 @@
         "mana": 356
     },
     "combat_stats": {
+<<<<<<< Updated upstream
         "health": 108,
+=======
+        "health": 42,
+>>>>>>> Stashed changes
         "strength": 29,
         "magical_attack": 20,
         "physical_defense": 67,

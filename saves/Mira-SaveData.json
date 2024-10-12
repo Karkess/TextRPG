@@ -120,9 +120,15 @@
         },
         "Gathering": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "current": 65,
             "max": 250,
             "experience": 258954
+=======
+            "current": 64,
+            "max": 250,
+            "experience": 250594
+>>>>>>> Stashed changes
 =======
             "current": 64,
             "max": 250,
@@ -171,7 +177,11 @@
         "Witchbloom": 561,
         "Stardrop Fruit": 850,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "Celestial Vine": 215
+=======
+        "Celestial Vine": 127
+>>>>>>> Stashed changes
 =======
         "Celestial Vine": 127
 >>>>>>> Stashed changes
@@ -217,7 +227,11 @@
         "Animals": [],
         "Max_Capacity": 100,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "Current_Capacity": 99
+=======
+        "Current_Capacity": 11
+>>>>>>> Stashed changes
 =======
         "Current_Capacity": 11
 >>>>>>> Stashed changes

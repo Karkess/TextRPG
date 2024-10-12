@@ -165,7 +165,10 @@
         "Wildberry": 39,
         "Rabbit": 10,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "Minnow": 87,
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         "Minnow": 88,
@@ -272,7 +275,11 @@
     },
     "combat_stats": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "health": 108,
+=======
+        "health": 42,
+>>>>>>> Stashed changes
 =======
         "health": 42,
 >>>>>>> Stashed changes

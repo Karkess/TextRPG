@@ -121,11 +121,7 @@
         "Gathering": {
             "current": 64,
             "max": 250,
-<<<<<<< Updated upstream
-            "experience": 238529
-=======
-            "experience": 250594
->>>>>>> Stashed changes
+            "experience": 252779
         },
         "Hunting": {
             "current": 1,
@@ -167,12 +163,8 @@
         "Spruce Log": 44,
         "Crimson Thorn": 2417,
         "Witchbloom": 561,
-<<<<<<< Updated upstream
-        "Stardrop Fruit": 850
-=======
         "Stardrop Fruit": 850,
-        "Celestial Vine": 127
->>>>>>> Stashed changes
+        "Celestial Vine": 150
     },
     "consumables": {},
     "equipped": {
@@ -214,11 +206,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-<<<<<<< Updated upstream
-        "Current_Capacity": 74.39999999999986
-=======
-        "Current_Capacity": 11
->>>>>>> Stashed changes
+        "Current_Capacity": 34
     },
     "status_effects": {
         "buffs": {},

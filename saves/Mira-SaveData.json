@@ -121,7 +121,7 @@
         "Gathering": {
             "current": 64,
             "max": 250,
-            "experience": 252779
+            "experience": 253539
         },
         "Hunting": {
             "current": 1,
@@ -164,7 +164,7 @@
         "Crimson Thorn": 2417,
         "Witchbloom": 561,
         "Stardrop Fruit": 850,
-        "Celestial Vine": 150
+        "Celestial Vine": 158
     },
     "consumables": {},
     "equipped": {
@@ -206,7 +206,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 34
+        "Current_Capacity": 42
     },
     "status_effects": {
         "buffs": {},

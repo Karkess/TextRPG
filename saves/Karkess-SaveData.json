@@ -132,11 +132,7 @@
         "Fishing": {
             "current": 1,
             "max": 250,
-<<<<<<< Updated upstream
-            "experience": 10
-=======
             "experience": 870
->>>>>>> Stashed changes
         },
         "Cooking": {
             "current": 1,
@@ -168,11 +164,7 @@
         "Silver": 1231,
         "Wildberry": 39,
         "Rabbit": 10,
-<<<<<<< Updated upstream
-        "Minnow": 1,
-=======
         "Minnow": 87,
->>>>>>> Stashed changes
         "Maple Log": 13,
         "Fae Ore": 2201,
         "Obsidium": 368,
@@ -244,11 +236,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-<<<<<<< Updated upstream
-        "Current_Capacity": 57.5
-=======
         "Current_Capacity": 85
->>>>>>> Stashed changes
     },
     "status_effects": {
         "buffs": {
@@ -258,5 +246,41 @@
             }
         },
         "debuffs": {}
+    },
+    "stats": {
+        "health": 135,
+        "strength": 29,
+        "magical_attack": 20,
+        "physical_defense": 67,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 186,
+        "mana": 356
+    },
+    "initial_stats": {
+        "health": 135,
+        "strength": 29,
+        "magical_attack": 20,
+        "physical_defense": 67,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 186,
+        "mana": 356
+    },
+    "combat_stats": {
+        "health": 108,
+        "strength": 29,
+        "magical_attack": 20,
+        "physical_defense": 67,
+        "magic_defense": 40,
+        "physical_accuracy": 83,
+        "magical_accuracy": 68,
+        "dexterity": 14,
+        "fatigue": 186,
+        "mana": 356
     }
 }

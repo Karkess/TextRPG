@@ -293,8 +293,19 @@ def execute_attack(attacker, target, attack_name, attack_data, enemies):
         if attack_data['targeting'] == "All Opponents":
             alive_enemies = [enemy for enemy in enemies if enemy['alive']]
             result = handle_special_effect(attacker, alive_enemies, attack_data['special_effect'])
+            try:
+                if not result["missed"] and not result["blocked"]:
+                    target['combat_stats']['health'] = max(0, target['combat_stats']['health'] - result["damage"])
+            except Exception as e:
+                return result
+
         else:
             result = handle_special_effect(attacker, target, attack_data['special_effect'])
+            try:
+                if not result["missed"] and not result["blocked"]:
+                    target['combat_stats']['health'] = max(0, target['combat_stats']['health'] - result["damage"])
+            except Exception as e:
+                return result
         
         # Set result for damage to 0 if it's a special effect (since special effects may not deal direct damage)
         result = {"damage": 0, "missed": False, "blocked": False, "flavor_text": attack_data.get("flavor_text", "")}

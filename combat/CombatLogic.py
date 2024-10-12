@@ -278,36 +278,41 @@ def calculate_magical_damage(user, target, attack_data):
     return {"damage": round(base_damage), "missed": False, "blocked": False, "flavor_text": attack_data["flavor_text"]}
 
 # Execute an attack (Physical, Magical, or Special)
+# Execute an attack (Physical, Magical, or Special)
 def execute_attack(attacker, target, attack_name, attack_data, enemies):
     attack_type = attack_data["type"]
 
+    # Handle different attack types
     if attack_type == "Physical":
         result = calculate_physical_damage(attacker, target, attack_data)
     elif attack_type == "Magical":
         result = calculate_magical_damage(attacker, target, attack_data)
     elif attack_type == "Special":
         from combat.SpecialAttacks import handle_special_effect
+        # Handle special effects on multiple or single opponents
         if attack_data['targeting'] == "All Opponents":
             alive_enemies = [enemy for enemy in enemies if enemy['alive']]
             result = handle_special_effect(attacker, alive_enemies, attack_data['special_effect'])
         else:
             result = handle_special_effect(attacker, target, attack_data['special_effect'])
-        return result
+        
+        # Set result for damage to 0 if it's a special effect (since special effects may not deal direct damage)
+        result = {"damage": 0, "missed": False, "blocked": False, "flavor_text": attack_data.get("flavor_text", "")}
 
-    # If attack was not missed or blocked, deduct health
+    # If the attack was not missed or blocked, deduct health for physical and magical attacks
     if not result["missed"] and not result["blocked"]:
-        # Subtract the damage from the target's current health
         target['combat_stats']['health'] = max(0, target['combat_stats']['health'] - result["damage"])
 
-    # Apply text formatting to the flavor text
+    # Apply text formatting to the flavor text for all attack types
     formatted_flavor_text = apply_text_formatting(result["flavor_text"])
 
-    # Return the final combat message with formatted text
+    # Return the final combat message with formatted text for all attack types
     return formatted_flavor_text.format(
         user=attacker['name'], 
         target=target['name'], 
         damage=result["damage"]
     )
+
 
 
 

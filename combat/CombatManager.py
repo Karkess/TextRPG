@@ -327,17 +327,21 @@ def process_status_effects(character, is_player=False):
     # Buffs and debuffs are processed separately
     for category in ['buffs', 'debuffs']:
         for effect_name, effect_data in list(character['status_effects'][category].items()):
-            # Retrieve the actual effect logic function and apply it
-            effect_info = effect_info or load_json_data("./combat/Status_Effects.json")['Common'].get(effect_name)
+            if is_player:
+                # For the player, status effects are loaded from the global Status_Effects.json file
+                effect_info = load_json_data("./combat/Status_Effects.json")['Common'].get(effect_name)
+            else:
+                # For the enemy, status effects should be already present in their data
+                effect_info = character.get('status_effects_info', {}).get(effect_name)
             if effect_info:
                 effect_func = getattr(status_effects_module, effect_info['Effect'])
                 effect_func(character, effect_data['stacks'])  # Apply the effect with stacks
 
-            # Decrease duration
-            effect_data['duration'] -= 1
-            if effect_data['duration'] <= 0:
-                print(f"{effect_name} expired on {character['name']}.")
-                del character['status_effects'][category][effect_name]
+                # Decrease duration
+                effect_data['duration'] -= 1
+                if effect_data['duration'] <= 0:
+                    print(f"{effect_name} expired on {character['name']}.")
+                    del character['status_effects'][category][effect_name]
 
 
 # Initialize enemy stats at the start of combat
@@ -405,6 +409,7 @@ def combat_loop(player, enemy_names):
             'buffs': {},
             'debuffs': {}
         }
+        print(f"{enemy['name']} has entered the battle!")
     
     # Get the player's primary and secondary class abilities
     primary_class_attacks = player['classes'][player['primary_class']]['attacks']

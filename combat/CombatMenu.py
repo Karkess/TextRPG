@@ -22,11 +22,11 @@ def combat_menu(player_data):
         if choice == "1":
             # For a random battle, we will instantiate a battle with a "Goblin"
             clear_screen()
-            print("Starting Random Battle against a Goblin!")
+            print("Starting Random Battle!")
             time.sleep(1)
 
             # Example: Starting a combat loop with a player and a Goblin enemy
-            combat_loop(player_data, ["Goblin", "Eye Gouger"])
+            combat_loop(player_data, ["Goblin", "Musical Fisherman"])
 
             input("\nPress Enter to Return")
         elif choice == "2":

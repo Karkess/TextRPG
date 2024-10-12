@@ -113,7 +113,27 @@
         "accuracy": 85,
         "cost": "Fatigue: 30",
         "special_effect": "vampiric_pact({user}, {targets})"
-      }
+      },
+      {
+        "name": "Bass Boost",
+        "type": "Special",
+        "targeting": "Self",
+        "flavor_text": "{user} feels the power of the bass flow through them!",
+        "power": 0,
+        "accuracy": 100,
+        "cost": "10 Mana",
+        "special_effect": "apply_status_test_boosts({user}, {user}, 'Strength Boost', 'buff', 5, 3)"
+    },
+    {
+      "name": "Bass Blast",
+      "type": "Physical",
+      "targeting": "Single Opponent",
+      "flavor_text": "{user} is holding a rather unwieldy looking bass and smashes it into {target}, delivering {damage} damage!!",
+      "power": 25,
+      "accuracy": 85,
+      "cost": "None",
+      "special_effect": "Blind"
+    }
     ]
   }
   

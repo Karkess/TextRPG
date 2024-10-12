@@ -239,7 +239,12 @@
         "Current_Capacity": 57.5
     },
     "status_effects": {
-        "buffs": {},
+        "buffs": {
+            "Strength Boost": {
+                "duration": 3,
+                "stacks": 1
+            }
+        },
         "debuffs": {}
     }
 }

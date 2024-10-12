@@ -92,6 +92,34 @@
         "type": "Advanced",
         "logic": "Cloaker uses 'Screech' if user has more than 50% health. Otherwise, use 'Bite'."
       }
+    },
+      "Musical Fisherman": {
+        "description": "This man really loves spending time with his bass.",
+        "level": "random.randint(5,7)",
+        "health": "250",
+        "strength": "65",
+        "magical_attack": "0",
+        "physical_defense": "0",
+        "magic_defense": "0",
+        "physical_accuracy": "95",
+        "magical_accuracy": "0",
+        "dexterity": "random.randint(5, 10)",
+        "name_color": "{MAGENTA}",
+        "entry_message": "The musical fisherman approaches you with a bass in one hand and a bass in the other. He looks at you with a twisted grin and says, 'I'm going to make this bass sing.'",
+        "death_message": "The musical fisherman falls to the ground, and says with his last breath that he was happy for the time he had with his bass, but regretted spending so much time with his bass.",
+        "experience": "250",
+        "attacks": [
+          "Bass Blast",
+          "Bass Boost"
+        ],
+        "drop_table": [],
+        "AI": {
+          "type": "Basic",
+          "weights": {
+            "Bass Blast": 8,
+            "Bass Boost": 2
+        }
+      }
     }
   }
   

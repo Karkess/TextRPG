@@ -127,7 +127,7 @@ def calculate_travel_stats(player_data):
 
     decay_rate = 0.75  # Decay rate for load factor
     load_factor = math.exp(-load_ratio * decay_rate)
-    adjusted_speed = total_speed * load_factor
+    adjusted_speed = max(total_speed * load_factor, 0.1)
     
     # Calculate the travel time modifier
     base_travel_time = 1.0  # Assume base time of 1.0

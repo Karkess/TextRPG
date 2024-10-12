@@ -90,9 +90,9 @@
     },
     "skills": {
         "Mining": {
-            "current": 100,
+            "current": 101,
             "max": 250,
-            "experience": 3132249
+            "experience": 3252249
         },
         "Smithing": {
             "current": 1,
@@ -120,9 +120,9 @@
             "experience": 0
         },
         "Gathering": {
-            "current": 99,
+            "current": 100,
             "max": 250,
-            "experience": 2850641
+            "experience": 2858121
         },
         "Hunting": {
             "current": 2,
@@ -130,9 +130,13 @@
             "experience": 100
         },
         "Fishing": {
-            "current": 1,
+            "current": 6,
             "max": 250,
+<<<<<<< Updated upstream
             "experience": 870
+=======
+            "experience": 880
+>>>>>>> Stashed changes
         },
         "Cooking": {
             "current": 1,
@@ -164,13 +168,17 @@
         "Silver": 1231,
         "Wildberry": 39,
         "Rabbit": 10,
+<<<<<<< Updated upstream
         "Minnow": 87,
+=======
+        "Minnow": 88,
+>>>>>>> Stashed changes
         "Maple Log": 13,
         "Fae Ore": 2201,
         "Obsidium": 368,
         "Aetherium": 2457,
         "Voidstone": 231,
-        "Void Keystone": 8,
+        "Void Keystone": 9,
         "Strawberry": 62,
         "Golden Lily": 34,
         "Moonwort": 2190,
@@ -181,7 +189,7 @@
         "Tempestwood Log": 1428,
         "Voidroot": 1908,
         "Veilshadow Wood": 586,
-        "Phantom Petal": 3232
+        "Phantom Petal": 3249
     },
     "consumables": {
         "Health Potion": 5,
@@ -236,15 +244,14 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
+<<<<<<< Updated upstream
         "Current_Capacity": 85
+=======
+        "Current_Capacity": 86
+>>>>>>> Stashed changes
     },
     "status_effects": {
-        "buffs": {
-            "Strength Boost": {
-                "duration": 3,
-                "stacks": 1
-            }
-        },
+        "buffs": {},
         "debuffs": {}
     },
     "stats": {
@@ -272,7 +279,11 @@
         "mana": 356
     },
     "combat_stats": {
+<<<<<<< Updated upstream
         "health": 108,
+=======
+        "health": 42,
+>>>>>>> Stashed changes
         "strength": 29,
         "magical_attack": 20,
         "physical_defense": 67,

@@ -90,9 +90,9 @@
     },
     "skills": {
         "Mining": {
-            "current": 101,
+            "current": 119,
             "max": 250,
-            "experience": 3252339
+            "experience": 11021249
         },
         "Smithing": {
             "current": 1,
@@ -169,8 +169,8 @@
         "Fae Ore": 2201,
         "Obsidium": 368,
         "Aetherium": 2457,
-        "Voidstone": 231,
-        "Void Keystone": 9,
+        "Voidstone": 9791,
+        "Void Keystone": 12,
         "Strawberry": 62,
         "Golden Lily": 34,
         "Moonwort": 2190,
@@ -236,7 +236,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 16
+        "Current_Capacity": 32
     },
     "status_effects": {
         "buffs": {},

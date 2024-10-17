@@ -119,14 +119,14 @@
             "experience": 0
         },
         "Gathering": {
-            "current": 64,
+            "current": 102,
             "max": 250,
-            "experience": 250594
+            "experience": 3649899
         },
         "Hunting": {
-            "current": 1,
+            "current": 74,
             "max": 250,
-            "experience": 0
+            "experience": 519675
         },
         "Fishing": {
             "current": 1,
@@ -164,7 +164,15 @@
         "Crimson Thorn": 2417,
         "Witchbloom": 561,
         "Stardrop Fruit": 850,
-        "Celestial Vine": 215
+        "Celestial Vine": 2390,
+        "Aether Blossom": 2700,
+        "Voidroot": 3077,
+        "Phantom Petal": 4918,
+        "Rabbit": 84,
+        "Deer": 4261,
+        "Griffin": 45,
+        "Savannah Lion": 392,
+        "Cave Bear": 525
     },
     "consumables": {},
     "equipped": {

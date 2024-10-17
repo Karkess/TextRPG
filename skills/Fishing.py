@@ -351,3 +351,4 @@ def fish(player_data, selected_spot):
     else:
         print("Invalid input.")
         time.sleep(1)
+

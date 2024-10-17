@@ -17,14 +17,14 @@ def save_player(player_data, file_name):
         json.dump(player_data, file, indent=4)
 
 # List of colors for rainbow effect (using bright foreground colors)
-RAINBOW_COLORS = [BRIGHT_RED, BRIGHT_YELLOW, BRIGHT_GREEN, BRIGHT_CYAN, BRIGHT_BLUE, BRIGHT_MAGENTA]
+RAINBOW_COLORS = [RED, BRIGHT_YELLOW, BRIGHT_GREEN, BRIGHT_CYAN, BRIGHT_BLUE, BRIGHT_MAGENTA]
 
 # Function to print text in a rainbow pattern
 def rainbow_text(text):
     result = []
     for i, char in enumerate(text):
         color = RAINBOW_COLORS[i % len(RAINBOW_COLORS)]  # Cycle through colors
-        result.append(f"{color}{char}{RESET}")  # Format each character with a color
+        result.append(f"{BOLD}{color}{char}{RESET}")  # Format each character with a color
     return ''.join(result)
 
 # Add experience to a skill and check for level-ups

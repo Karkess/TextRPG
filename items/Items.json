@@ -225,6 +225,11 @@
                 "Value": 150,
                 "Weight": 70
             },
+            "Mountain Goat": {
+                "Description": "A sure-footed mountain goat, its hide is prized for its durability.",
+                "Value": 150,
+                "Weight": 70
+            },
             "Arctic Fox": {
                 "Description": "A sleek and elusive arctic fox, highly valued for its fur.",
                 "Value": 120,
@@ -310,10 +315,20 @@
                 "Value": 50,
                 "Weight": 2
             },
+            "Phase Prairie Dog": {
+                "Description": "A strange prairie dog that phases in and out of reality. Its fur is highly sought after by alchemists.",
+                "Value": 50,
+                "Weight": 2
+            },
             "Cave Bear": {
                 "Description": "A massive bear, hunted for its valuable hide.",
                 "Value": 900,
                 "Weight": 180
+            },
+            "Storm Bat": {
+                "Description": "Little Glowy Bats",
+                "Value": 500,
+                "Weight": 200
             },
             "Storm Eagle": {
                 "Description": "A powerful eagle that soars through the storm, prized for its feathers.",

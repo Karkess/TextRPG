@@ -92,7 +92,7 @@
         "Mining": {
             "current": 101,
             "max": 250,
-            "experience": 3252249
+            "experience": 3252339
         },
         "Smithing": {
             "current": 1,
@@ -125,7 +125,7 @@
             "experience": 2858121
         },
         "Hunting": {
-            "current": 2,
+            "current": 95,
             "max": 250,
             "experience": 100
         },
@@ -157,7 +157,7 @@
     },
     "inventory": {
         "Denarius": 50,
-        "Stone": 401,
+        "Stone": 410,
         "Copper": 35,
         "Coal": 19,
         "Iron": 1,
@@ -236,7 +236,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-        "Current_Capacity": 86
+        "Current_Capacity": 16
     },
     "status_effects": {
         "buffs": {},

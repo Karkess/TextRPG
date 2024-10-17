@@ -119,26 +119,14 @@
             "experience": 0
         },
         "Gathering": {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            "current": 65,
+            "current": 102,
             "max": 250,
-            "experience": 258954
-=======
-            "current": 64,
-            "max": 250,
-            "experience": 250594
->>>>>>> Stashed changes
-=======
-            "current": 64,
-            "max": 250,
-            "experience": 250594
->>>>>>> Stashed changes
+            "experience": 3649899
         },
         "Hunting": {
-            "current": 1,
+            "current": 74,
             "max": 250,
-            "experience": 0
+            "experience": 519275
         },
         "Fishing": {
             "current": 1,
@@ -176,15 +164,15 @@
         "Crimson Thorn": 2417,
         "Witchbloom": 561,
         "Stardrop Fruit": 850,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        "Celestial Vine": 215
-=======
-        "Celestial Vine": 127
->>>>>>> Stashed changes
-=======
-        "Celestial Vine": 127
->>>>>>> Stashed changes
+        "Celestial Vine": 2390,
+        "Aether Blossom": 2700,
+        "Voidroot": 3077,
+        "Phantom Petal": 4918,
+        "Rabbit": 84,
+        "Deer": 4261,
+        "Griffin": 45,
+        "Savannah Lion": 392,
+        "Cave Bear": 524
     },
     "consumables": {},
     "equipped": {
@@ -226,15 +214,7 @@
         "Cart": "Handcart",
         "Animals": [],
         "Max_Capacity": 100,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        "Current_Capacity": 99
-=======
-        "Current_Capacity": 11
->>>>>>> Stashed changes
-=======
-        "Current_Capacity": 11
->>>>>>> Stashed changes
+        "Current_Capacity": 0
     },
     "status_effects": {
         "buffs": {},

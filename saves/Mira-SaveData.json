@@ -126,7 +126,7 @@
         "Hunting": {
             "current": 74,
             "max": 250,
-            "experience": 519275
+            "experience": 519675
         },
         "Fishing": {
             "current": 1,
@@ -172,7 +172,7 @@
         "Deer": 4261,
         "Griffin": 45,
         "Savannah Lion": 392,
-        "Cave Bear": 524
+        "Cave Bear": 525
     },
     "consumables": {},
     "equipped": {
